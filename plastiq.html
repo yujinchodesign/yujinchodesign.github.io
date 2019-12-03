@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Case Study Page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <script>
+        function fadeContent() {
+            var nav = document.getElementById("nav-hidden");
+            nav.style.display = "block";
+
+            var content = document.getElementById("case-study-content");
+            content.style.display = "block";
+        }
+    </script>
+    <body onscroll='fadeContent()'>
+        <div id='nav-hidden'>
+            <div id='nav-links'>
+                <a href="/index.html">Work</a>
+                <a href="/about.html">About</a>
+            </div>
+        </div>
+
+        <section id='case-study-intro' class='text-block'>
+            <h1>Unlocking Business Cash Flow</h1>
+            <p class='intro'><a href="http://www.plastiq.com" target="_blank">Plastiq</a> helps businesses preserve working capital by enabling them to pay vendors that don't accept card, with credit cards. As one of four product designers, I work closely with our PMs and engineers to build solutions for both consumer and business users.</p>
+        </section>
+
+        <div id='case-study-content'>
+            <section id='pq-collecting-tins' class='case-study-section'>
+                <div class='text-block-top'>
+                    <h2>Creating a Compliant Experience</h2>
+                    <p class='metadata'>Plastiq Business App ∙ 2 weeks</p>
+                    <p>Federal law requires Plastiq to record tax identification numbers (TINs) of businesses that make payments greater or equal to $3000 with Texas-based cards. I was responsible for designing the TIN collection experience in Plastiq’s business app.</p>        
+                    <div class='in-text img'>
+                        <img src='imgs/plastiq/tin-cover-4.png'>
+                    </div>
+                    <p>When Texas cited us for failure to collect TINs in 2017, we quickly addressed the issue by using a third party service that would automatically retrieve the required information. Given the chance to reimagine this solution with the launch of our business app, we decided to take a more transparent approach and ask businesses to provide their TINs instead of using a third-party service.</p>
+                    <div class='spacer-l'></div>
+                    <h3>Discovery</h3>
+                    <p>A tax identification number (TIN) is an umbrella term for several identifiers that an entity may use for tax-reporting purposes. The types of TINs that businesses can have include employer identification number (EIN), social security number (SSN), and individual taxpayer identification number (ITIN).</p>
+                    <div class='in-text img'>
+                        <img src='imgs/plastiq/w9.png'>
+                        <p class='img-label'>Form W9 is used to report TINs</p>
+                    </div>
+                    <p>Based on learnings from internal conversations and online research, I defined the following design principles:</p>
+                </div>
+                <div class='l img'>
+                    <img src='imgs/plastiq/tin-principles.png'>
+                </div>
+                <div class='text-block'>
+                    <div class='spacer-m'></div>
+                    <h3>When should we ask for TINs?</h3>
+                    <p>I used my learnings to identify and evaluate areas of the app where we could potentially collect TINs. This helped guide my prototyping.</p>
+                </div>
+                <div class='m'>
+                    <table id='when-to-collect-tins-table' class='five-column'>
+                        <tr>
+                            <th>App Area</th>
+                            <th>Registration <img src='imgs/plastiq/orange-dot.png'></th> 
+                            <th>In-app Setup <img src='imgs/plastiq/orange-dot.png'></th>
+                            <th>Card Addition <img src='imgs/plastiq/green-dot.png'></th>
+                            <th>Payment <img src='imgs/plastiq/green-dot.png'></th>
+                        </tr>
+                        <tr>
+                            <td>Pros</td>
+                            <td>▫ Info collection expected<br></td> 
+                            <td>▫ More investment in app, greater willingess to provide "heavier" info<br>▫ Prepare for future info collection</td> 
+                            <td>▫ Target Texas users by billing address<br>▫ Less pressure than payment</td> 
+                            <td>▫ Target Texas users making payments ≥$3k</td> 
+                        </tr>
+                        <tr>
+                            <td>Cons</td>
+                            <td>▫ Cannot target Texas users<br>▫ Top of funnel<br>▫ Would require reworking of flow because little real estate</td>
+                            <td>▫ Complexity around targeting Texas users<br>▫ New concept</td>
+                            <td>▫ TIN collection unexpected</td>
+                            <td>▫ Payments may be time-sensitive<br>▫ TIN collection unexpected</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class='text-block'>
+                    <p>After exploring some initial concepts and getting feedback, I settled on an approach where users would first be educated about the TIN requirement when they added a Texas card, but given the flexibility to add their TIN until they wanted to use the card for a payment.</p>
+                </div>
+                <div class='l'>
+                    <div class='built-img'>
+                        <h4>Card Addition Explorations</h4>
+                        <div class='row'>
+                            <div class='column two'>
+                                <img src='imgs/plastiq/addcard-1.gif'>
+                                <p class='img-label'>Unexpected, so close to finish</p>
+                            </div>
+                            <div class='column two'>
+                                <img src='imgs/plastiq/addcard-3.gif'>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='column two'>
+                                <img src='imgs/plastiq/addcard-4.gif'>
+                                <p class='img-label'>Unexpected, so close to finish</p>
+                            </div>
+                            <div class='column two'>
+                                <img src='imgs/plastiq/addcard-5.gif'>
+                            </div>
+                        </div>
+                        <div class='spacer-m'></div>
+                        <h4>Pay Flow Explorations</h4>
+                        <div class='row'>
+                            <div class='column two'>
+                                <img src='imgs/plastiq/pay-1.gif'>
+                                <p class='img-label'>Unexpected, so close to finish</p>
+                            </div>
+                            <div class='column two'>
+                                <img src='imgs/plastiq/pay-2.gif'>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='column two'>
+                                <img src='imgs/plastiq/pay-3.gif'>
+                                <p class='img-label'>Unexpected, so close to finish</p>
+                            </div>
+                            <div class='column two'>
+                                <img src='imgs/plastiq/pay-4.gif'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='text-block'>
+                    <p>To give users the flexibility to provide their TIN whenever they are able, users can access the TIN collection modal at any time by clicking on the 'TIN' label on the card.</p>
+                </div>
+                <div class='l img'>
+                    <img src='imgs/plastiq/tag-iterations.png'>
+                </div>
+                <div class='text-block'>
+                    <h3>Testing & Refinement</h3>
+                    <p>I ran several tests on <a href='usertesting.com' target='_blank'>usertesting.com</a> to account for any oversights and answer the following research questions:</p>
+                    <ul>
+                        <li>How do users react when they are asked for a TIN after adding a card?</li>
+                        <li>Do users understand why we’re asking for a TIN? What unanswered questions do they have?</li>
+                        <li>Do users understand how to add a TIN if they skip it in card addition?</li>
+                    </ul>
+                    <p>Testing helped uncover important insights about the language used: despite being technically accurate, using the acronym “TIN” along with “EIN” and “SSN” was confusing to users. I opted to use “Tax ID” instead of “TIN” to add clarity. Multiple users also expressed that they were wary to provide their personal information to an unfamiliar startup, so I added information about our data encryption.</p>
+                    <div class='spacer-l'></div>
+                    <h3>Shipped Experience</h3>
+                </div>
+                <div class='fw img'>
+                    <img src='imgs/plastiq/tin-final-1.png'>
+                </div>
+                <div class='fw img'>
+                    <img src='imgs/plastiq/tin-final-2.png'>
+                </div>
+                <div class='m img' id='tin-tooltip'>
+                    <div class='spacer-l'></div>
+                    <img src='imgs/plastiq/tin-tooltip.png'>
+                    <p class='img-label'>Design system updates</p>
+                </div>
+                <!--<div class='text-block'>
+                    <p>This is the status and things i'll be looking out for</p>
+                </div>-->
+            </section>
+            <section id='pq-research' class='case-study-section'>
+                <div class='text-block'>
+                    <h2>Understanding SMBs</h2>
+                    <p class='metadata'>Design Research ∙ 2.5 months</p>
+                    <p>I joined Plastiq when the company had just pivoted from consumer to small and midsize business (SMB) users. Having expressed my interest in user research, I was given the opportunity to lead a foundational user research effort on how we could best serve SMBs with the new business product.</p>
+                    <p>I started by interviewing our sales, product, and customer service teams and evaluating popular SMB finance products (e.g., Quickbooks, Stripe, PayPal) to get a better sense of who we were targeting and what they valued. I also ran a “research framing” session with our product team to understand what we knew vs. what we wanted to learn.</p>
+                </div>
+                <div class='l img'>
+                    <img src='imgs/plastiq/research-1.png'>
+                </div>
+                <div class='text-block'>
+                    <p>I recruited and interviewed 20 people that fit our target profile (e.g., SMB owners, partners, accountants). I used <a href=‘https://en.wikipedia.org/wiki/Grounded_theory’>grounded theory research methods</a> to identify themes in the data; in retrospect this wasn't the best approach given my short timeline and research purposes, but it helped me get very close to the data and uncover nuanced topics.</p>
+                    <p>I shared my findings via a holistic report, personas, and several presentations to various teams including a lunch and learn with the entire company.</p>
+                </div>
+                <div class='m img'>
+                    <img src='imgs/plastiq/research-2.png'>
+                    <p class='img-label'>Lunch and learning</p>
+                </div>
+            </section>
+            <section id='pq-csc' class='case-study-section'>
+                <div class='text-block'>
+                    <h2>Blocking Fraudsters</h2>
+                    <p class='metadata'>Plastiq Consumer App ∙ 1.5 weeks</p>
+                    <p>As a payments platform, Plastiq experiences a lot of fraud. One of the ways fraudsters take advantage of our app is by taking over user accounts and making payments with the saved cards on the accounts. We decided to mitigate this problem by requiring users to enter card security codes upon payment submission. I was the sole designer on this project.</p>        
+                </div>
+                <div class='l img'>
+                    <img src='imgs/plastiq/csc-explorations.png'>
+                </div>
+                <div class='text-block'>
+                    <p>I tested two designs on <a href='usertesting.com' target='_blank'>usertesting.com</a>: one with CSC entry placed on the top left with a lighter visual styling, and one with CSC entry on the top right with a more prominent visual styling.</p>
+                    <p>The left-placed CSC entry performed quite poorly: two users overlooked the CSC field, two users questioned whether or not they could change their card, and two users forgot to submit the payment. I attributed these issues to both the light visual styling and the left placement being misaligned with users’ desired order of activities (i.e., 1st reviewing, 2nd entering CSC, 3rd submitting the payment).</p>
+                    <div class='spacer-l'></div>
+                    <h3>Shipped Experience</h3>
+                </div>
+                <div class='fw img'>
+                    <img src='imgs/plastiq/csc-final.png'>
+                </div>          
+            </section>
+        </div>
+
+        <div id='scroll-space'></div>
+    </body>
+</html>
