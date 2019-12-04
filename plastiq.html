@@ -31,26 +31,34 @@
                 <div class='text-block-top'>
                     <h2>Designing a Compliant Product</h2>
                     <p class='metadata'>Plastiq Business App ∙ 2 weeks</p>
-                    <p>Federal law requires Plastiq to record tax identification numbers (TINs) of businesses that make payments greater or equal to $3000 with Texas-based cards. I was responsible for designing the TIN collection experience in Plastiq’s business app.</p>        
+                    <p>Federal law requires Plastiq to record taxpayer identification numbers (TINs) of businesses that make payments greater or equal to $3000 with Texas-based cards. I was responsible for designing the TIN collection experience in Plastiq’s business app.</p>        
                     <div class='in-text img'>
-                        <img src='imgs/plastiq/tin-cover-4.png'>
+                        <img src='imgs/plastiq/tin-cover-1.png'>
                     </div>
-                    <p>When Texas cited us for failure to collect TINs in 2017, we quickly addressed the issue by using a third party service that would automatically retrieve the required information. Given the chance to reimagine this solution with the launch of our business app, we decided to take a more transparent approach and ask businesses to provide their TINs instead of using a third-party service.</p>
-                    <div class='spacer-l'></div>
-                    <h3>Discovery</h3>
-                    <p>A tax identification number (TIN) is an umbrella term for several identifiers that an entity may use for tax-reporting purposes. The types of TINs that businesses can have include employer identification number (EIN), social security number (SSN), and individual taxpayer identification number (ITIN).</p>
-                    <div class='in-text img'>
-                        <img src='imgs/plastiq/w9.png'>
-                        <p class='img-label'>Form W9 is used to report TINs</p>
-                    </div>
-                    <p>Based on learnings from internal conversations and online research, I defined the following design principles:</p>
-                </div>
-                <div class='l img'>
-                    <img src='imgs/plastiq/tin-principles.png'>
                 </div>
                 <div class='text-block'>
                     <div class='spacer-m'></div>
-                    <h3>When should we ask for TINs?</h3>
+                    <h3>The deal with TINs</h3>
+                    <p>A TIN is an umbrella term for several identifiers that an entity may use for tax-reporting purposes. A business may use an employer identification number (EIN), social security number (SSN), or individual taxpayer identification number (ITIN) as their TIN.</p>
+                    <div class='in-text img'>
+                        <img src='imgs/plastiq/w9-2.png'>
+                        <p class='img-label'>Form W9 is used to report TINs</p>
+                    </div>
+                    <!--<div class='in-text img'>
+                        <img src='imgs/plastiq/tin-law-2.png'>
+                        <p class='img-label'><a href='https://www.law.cornell.edu/cfr/text/31/1010.410' target='_blank'>31 CFR § 1010.410</a></p>
+                    </div>-->
+                    <p>When Texas cited us under <a href='https://www.law.cornell.edu/cfr/text/31/1010.410' target='_blank'>31 CFR § 1010.410</a> for failure to collect TINs in 2017, we quickly addressed the issue by using a third party service that would automatically retrieve the required information. Given the chance to reimagine this solution with the launch of our business app, we decided to take a more transparent approach and ask businesses to provide their TINs instead of using a third-party service.</p>
+                    <div class='spacer-l'></div>
+                    <h3>Design Principles</h3>
+                    <p>Based on learnings from internal conversations and online research, I defined the following design principles:</p>
+                </div>
+                <div class='m img'>
+                    <img src='imgs/plastiq/tin-principles-4.png'>
+                </div>
+                <div class='text-block'>
+                    <div class='spacer-m'></div>
+                    <h3>When should we ask users for TINs?</h3>
                     <p>I used my learnings to identify and evaluate areas of the app where we could potentially collect TINs. This helped guide my prototyping.</p>
                 </div>
                 <div class='m'>
@@ -159,7 +167,7 @@
                     <p>In the registration flow, our highest drop-off occurs at email confirmation. We decided to conduct an experiment moving email confirmation in-app to reduce friction in registration and increase user acquisition.</p>
                     <div class='spacer-m'></div>
                     <h3>"We need new users, now"</h3>
-                    <p>This project emerged during a high-pressure period where we were intensely focused on acquiring new users. Our Head of Operations suggested that we try improving user acquisition by modifying the registration flow, so I audited and gathered data on the flow to identify areas for improvement.</p>
+                    <p>This project emerged during a high-pressure period where we were focused on acquiring new users <i>quickly</i>. Our Head of Operations suggested that we try improving user acquisition by modifying the registration flow, so I audited and gathered data on the flow to identify areas for improvement.</p>
                     <p>I found an assortment of UX issues (e.g., confusing copy, unfamiliar UI patterns, long loading times) but funnel data suggested that addressing these “cosmetic” issues wouldn’t result in big wins. After further investigation and consideration of Plastiq’s immediate needs, I proposed an experimentation plan where we start by addressing the highest drop-off point—30% at email confirmation—and subsequently address other issues in the flow.</p>
                 </div>
                 <div class='l img'>
