@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Chivo|Lato:300,400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono|Lato:300,400,400i,700&display=swap');
 
 /***** text styles *****/
 body {
@@ -17,7 +17,7 @@ h1 {font-size: 46px; margin-top: 0;}
 h2 {font-size: 28px;}
 h3 {font-size: 21px;}
 h4 {font-size: 16px;
-    font-family: 'Andale Mono';
+    font-family: 'Andale Mono', 'Space Mono', 'Helvetica';
     font-weight: 100;}
 
 p.metadata {
@@ -116,9 +116,9 @@ p a:hover, #nav a:hover, #nav-hidden a:hover, #bottom a:hover {
     
 }
 
-#home-intro h1 {font-size: 42px; margin-bottom: 24px;}
+#home-intro h1 {font-size: 44px; line-height: 1em; margin-bottom: 16px;}
 #home-intro p {margin-top: 0;}
-#home-intro .metadata {margin: 0 0 40px 0;}
+#home-intro .metadata {margin: 0;}
 
 #intro-text-l, #intro-text-r {
     width: 50%;
@@ -347,12 +347,12 @@ th, td {
 }
 
 th {
-    font-family: 'Andale Mono';
+    font-family: 'Andale Mono', 'Space Mono', 'Helvetica';
     font-weight: 500;
 }
 
 td:nth-child(1) {
-    font-family: 'Andale Mono';
+    font-family: 'Andale Mono', 'Space Mono', 'Helvetica';
     font-weight: 500;
 }
 
