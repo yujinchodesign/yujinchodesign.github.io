@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Space+Mono|Lato:300,400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700|IBM+Plex+Serif:400,500,600,700|Space+Mono|Lato:300,400,400i,700&display=swap');
 
 /***** text styles *****/
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
     color: #222222;
     font-size: 19px;
     line-height: 1.65em;
@@ -13,15 +13,19 @@ body {
     --grey-back: #F7F7F7;
 }
 
-h1 {font-size: 46px; margin-top: 0;}
+h1, h2, h3 {
+    font-weight: 400;
+}
+
+h1 {font-size: 44px; margin-top: 0;}
 h2 {font-size: 28px;}
-h3 {font-size: 21px;}
+h3 {font-size: 19px;}
 h4 {font-size: 16px;
     font-family: 'Andale Mono', 'Space Mono', 'Helvetica';
     font-weight: 100;}
 
 p.metadata {
-    font-size: 18px;
+    font-size: 19px;
     color: var(--grey-text);
 }
 
@@ -30,12 +34,12 @@ a {
     color: var(--black-text);
 }
 
-p a, #nav a, #nav-hidden a, #bottom a {
+p a, #nav a, #nav-2 a, #nav-hidden a, #bottom a {
     border-bottom: 1px solid rgba(18, 18, 19, 0.3);
     transition: 0.1s ease;
 }
 
-p a:hover, #nav a:hover, #nav-hidden a:hover, #bottom a:hover {
+p a:hover, #nav a:hover, #nav-2 a:hover, #nav-hidden a:hover, #bottom a:hover {
     border-bottom: 1px solid rgba(18, 18, 19, 0.87);
     transition: 0.1s ease;
     cursor: pointer;
@@ -72,6 +76,44 @@ p a:hover, #nav a:hover, #nav-hidden a:hover, #bottom a:hover {
     line-height: 1.45em;
 }
 
+#nav-2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    animation: fadeIn 1.3s;
+    display: flex;
+    justify-content: space-between;
+    padding: 34px 0;
+}
+
+#site-title a {
+    font-size: 19px;
+    line-height: 1.45em;
+}
+
+#nav-links-2 a {
+    font-size: 17px;
+    line-height: 1.45em;
+}
+
+#site-title {
+    width: 200px;
+    padding-left: 100px;
+}
+#nav-links-wrapper {
+    width: 160px;
+    padding-right: 100px;
+}
+
+#nav-links-2 {
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    float: right;
+}
+
 /***** about page styles *****/
 #about {
     animation: fadeInUp 0.8s;
@@ -80,7 +122,7 @@ p a:hover, #nav a:hover, #nav-hidden a:hover, #bottom a:hover {
 #about-me-wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 20vh auto 32vh auto;
+    margin: 22vh auto 22vh auto;
     max-width: 960px;
 }
 
@@ -95,7 +137,7 @@ p a:hover, #nav a:hover, #nav-hidden a:hover, #bottom a:hover {
 }
 
 #about-txt {
-    margin-top: 10vh;
+    margin-top: 8vh;
     width: 55%;
 }
 
@@ -107,38 +149,40 @@ p a:hover, #nav a:hover, #nav-hidden a:hover, #bottom a:hover {
 
 /* intro */
 #home-intro {
-    margin: 36vh auto 200px auto;
+    margin: 30vh auto 120px auto;
     /* margin-bottom is 140px, padding-bottom: 160px;
     border-bottom: #DDD solid 1px; */
-    max-width: 960px;
+    max-width: 760px;
     display: flex;
     justify-content: space-between;
-    
 }
 
-#home-intro h1 {font-size: 44px; line-height: 1em; margin-bottom: 16px;}
+#home-intro h1 {font-size: 19px; line-height: 1em; margin-bottom: 22px;}
 #home-intro p {margin-top: 0;}
 #home-intro .metadata {margin: 0;}
 
-#intro-text-l, #intro-text-r {
-    width: 50%;
+#intro-text-l {
+    width: 60%;
+}
+#intro-text-r {
+    width: 0%;
 }
 
 /* case study links */
 #case-studies {
-    width: 960px;
+    width: 760px;
     margin: 0 auto;
 }
 
 .case-study {
     width: 100%;
-    margin-bottom: 140px;
+    margin-bottom: 120px;
     position: relative;
 }
 
 .case-study-img {
     width: 100%;
-    height: 500px;
+    height: 390px;
     border-radius: 3px;
     text-align: center;
     overflow: hidden;
@@ -172,8 +216,8 @@ p a:hover, #nav a:hover, #nav-hidden a:hover, #bottom a:hover {
 .case-study-text h2 {
     color: #fff;
     margin: 0;
-    font-size: 46px;
-    line-height: 1.6em;
+    font-size: 38px;
+    line-height: 1.4em;
 }
 
 .case-study-text h3 {
@@ -184,7 +228,7 @@ p a:hover, #nav a:hover, #nav-hidden a:hover, #bottom a:hover {
 }
 
 .case-study-text-wrapper {
-    padding: 170px 110px;
+    padding: 120px 80px;
 }
 
 .case-study:hover .case-study-text {
@@ -193,7 +237,7 @@ p a:hover, #nav a:hover, #nav-hidden a:hover, #bottom a:hover {
 }
 
 #plastiq .case-study-img {
-    background-image: linear-gradient(to top right, rgb(26, 25, 80) 0%, rgb(45, 53, 160) 100%);/* #070C56 0%, rgb(14, 56, 163) 100%); */
+    background-image: linear-gradient(to top right, rgb(30, 28, 126) 0%, rgb(37, 64, 184) 100%);/* #070C56 0%, rgb(14, 56, 163) 100%); */
 }
 
 #capstone .case-study-img {
@@ -206,20 +250,24 @@ p a:hover, #nav a:hover, #nav-hidden a:hover, #bottom a:hover {
 
 /* bottom */
 #bottom {
-    width: 960px;
-    margin: 180px auto 200px auto;
+    padding: 0 100px;
+    margin: 20vh auto 72px auto;
     display: flex;
     justify-content: space-between;
 }
 
+#bottom a, #bottom a:hover {
+    border: none;
+}
+
 #bottom-l {
     text-align: left;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 #bottom-r {
     text-align: right;
-    font-size: 16px;
+    font-size: 22px;
 }
 
 /***** case study styles *****/
@@ -235,7 +283,7 @@ p a:hover, #nav a:hover, #nav-hidden a:hover, #bottom a:hover {
 
 #case-study-intro h1 {
     padding-top: 32vh;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 #case-study-intro p.intro {
@@ -246,7 +294,7 @@ p a:hover, #nav a:hover, #nav-hidden a:hover, #bottom a:hover {
 
 #case-study-content {
     animation: fadeInUp 0.6s;
-    display: none;
+    /* display: none; */
 }
 
 .text-block-top {
@@ -389,6 +437,10 @@ td:nth-child(1) {
 
 @keyframes fadeIn {
     0% {
+        opacity: 0;
+    }
+
+    40% {
         opacity: 0;
     }
 

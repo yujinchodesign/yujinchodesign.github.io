@@ -4,7 +4,7 @@
         <title>Case Study Page</title>
         <link rel="stylesheet" href="styles.css">
     </head>
-    <script>
+    <!--<script>
         function fadeContent() {
             var nav = document.getElementById("nav-hidden");
             nav.style.display = "block";
@@ -12,12 +12,25 @@
             var content = document.getElementById("case-study-content");
             content.style.display = "block";
         }
-    </script>
-    <body onscroll='fadeContent()'>
-        <div id='nav-hidden'>
+    </script>-->
+    <body>
+        <!--onscroll='fadeContent()'
+            <div id='nav-hidden'>
             <div id='nav-links'>
                 <a href="/index.html">Work</a>
                 <a href="/about.html">About</a>
+            </div>
+        </div>-->
+
+        <div id='nav-2'>
+            <div id='site-title'>
+                <a href="/index.html">Yujin Cho</a>
+            </div>
+            <div id='nav-links-wrapper'>
+                <div id='nav-links-2'>
+                    <a href="/index.html">Work</a>
+                    <a href="/about.html">About</a>
+                </div>
             </div>
         </div>
 
@@ -25,48 +38,42 @@
             <h1>Unlocking Business Cash Flow</h1>
             <p class='intro'><a href="http://www.plastiq.com" target="_blank">Plastiq</a> helps businesses preserve working capital by enabling them to pay vendors that don't accept card, with credit cards. As one of four product designers, I work closely with our PMs and engineers to build solutions for both consumer and business users.</p>
         </section>
-
         <div id='case-study-content'>
             <section id='pq-collecting-tins' class='case-study-section'>
                 <div class='text-block-top'>
                     <h2>Designing a Compliant Experience</h2>
                     <p class='metadata'>Plastiq Business App ∙ 2 weeks</p>
                     <p>Federal law requires Plastiq to record taxpayer identification numbers (TINs) of businesses that make payments greater or equal to $3000 with Texas-based cards. I was responsible for designing the TIN collection experience in Plastiq’s business app.</p>        
-                    <div class='in-text img'>
+                    <!--<div class='in-text img'>
                         <img src='imgs/plastiq/tin-cover.png'>
-                    </div>
-                </div>
-                <div class='text-block'>
+                    </div>-->
+                    <div class='spacer-m'></div>
                     <h3>The deal with TINs</h3>
                     <p>A TIN is an umbrella term for several identifiers that an entity may use for tax-reporting purposes. A business may use an employer identification number (EIN), social security number (SSN), or individual taxpayer identification number (ITIN) as their TIN.</p>
                     <div class='in-text img'>
                         <img src='imgs/plastiq/w9-2.png'>
                         <p class='img-label'>Form W9 is used to report TINs</p>
                     </div>
-                    <!--<div class='in-text img'>
-                        <img src='imgs/plastiq/tin-law-2.png'>
-                        <p class='img-label'><a href='https://www.law.cornell.edu/cfr/text/31/1010.410' target='_blank'>31 CFR § 1010.410</a></p>
-                    </div>-->
                     <p>When Texas cited us under <a href='https://www.law.cornell.edu/cfr/text/31/1010.410' target='_blank'>31 CFR § 1010.410</a> for failure to collect TINs in 2017, we quickly addressed the issue by using a third party service that would automatically retrieve the required information. Given the chance to reimagine this solution with the launch of our business app, we decided to take a more transparent approach and ask businesses to provide their TINs.</p>
-                    <div class='spacer-m'></div>
-                    <h3>How can we ease TIN collection?</h3>
-                    <p>I spoke to various people at the company with knowledge on the cultural context of TINs to understand how I could minimize the inconvenience of providing TINs. I also conducted thorough online research to understand the types of TINs that a business may have and the requirements of the law.</p>
+                    <div class='spacer-l'></div>
+                    <h3>How can we minimize inconvenience?</h3>
+                    <p>I spoke to various people at the company with knowledge on the cultural context of TINs to understand how I could minimize the inconvenience of providing TINs.</p>
                 <div class='in-text img'>
-                    <img src='imgs/plastiq/tin-principles-4.png'>
+                    <img src='imgs/plastiq/tin-principles.png'>
                 </div>
-                    <div class='spacer-m'></div>
+                    <div class='spacer-l'></div>
                     <h3>When's the best time to ask?</h3>
                     <p>I used my learnings to identify and evaluate areas of the app where we could collect TINs. This helped guide my prototyping.</p>
+                    <div class='in-text img'>
+                        <img src='imgs/plastiq/tin-table.png'>
+                    </div>
+                    <p>After getting feedback and exploring initial concepts, I settled on an approach where users would first be educated about the TIN requirement when they added a Texas card, but given the flexibility to add their TIN until they wanted to use the card for a payment.</p>
                 </div>
                 <div class='m img'>
-                    <img src='imgs/plastiq/tin-table.png'>
+                    <img src='imgs/plastiq/tin-flow.png'>
                 </div>
                 <div class='text-block'>
-                    <p>After getting feedback and exploring initial concepts, I settled on an approach where users would first be educated about the TIN requirement when they added a Texas card, but given the flexibility to add their TIN until they wanted to use the card for a payment.</p>
-                    <p>[flow diagram]</p>
-                </div>
-                <div class='text-block'>
-                    <div class='spacer-m'></div>
+                    <div class='spacer-l'></div>
                     <h3>Iterations</h3>
                 </div>
                 <div class='text-block'>
@@ -99,7 +106,7 @@
                     <div class='spacer-m'></div>
                     <h3>"We need new users, now"</h3>
                     <p>This project emerged during a high-pressure period where we were focused on acquiring new users <i>quickly</i>. Our Head of Operations suggested that we try improving user acquisition by modifying the registration flow, so I audited and gathered data on the flow to identify areas for improvement.</p>
-                    <p>I found an assortment of UX issues (e.g., confusing copy, unfamiliar UI patterns, long loading times) but funnel data suggested that addressing these “cosmetic” issues wouldn’t result in big wins. After further investigation and consideration of Plastiq’s immediate needs, I proposed an experimentation plan where we start by addressing the highest drop-off point—30% at email confirmation—and subsequently address other issues in the flow.</p>
+                    <p>I identified an assortment of UX issues (e.g., confusing copy, unfamiliar UI patterns, long loading times) but funnel data suggested that addressing these “cosmetic” issues wouldn’t result in big wins. After further investigation and consideration of Plastiq’s immediate needs, I proposed an experimentation plan where we start by addressing the highest drop-off point—30% at email confirmation—and subsequently address other issues in the flow.</p>
                 </div>
                 <div class='l img'>
                     <img src='imgs/plastiq/email-exp.png'>
