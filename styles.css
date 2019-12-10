@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700|IBM+Plex+Serif:400,500,600,700|Space+Mono|Lato:300,400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700|IBM+Plex+Serif:400,500,600,700|Space+Mono|Lato:300,400,400i,700&display=swap');
 
 /***** text styles *****/
 body {
@@ -17,16 +17,16 @@ h1, h2, h3 {
     font-weight: 400;
 }
 
-h1 {font-size: 44px; margin-top: 0;}
-h2 {font-size: 28px;}
+h1 {font-size: 38px; margin-top: 0;}
+h2 {font-size: 24px;}
 h3 {font-size: 19px;}
 h4 {font-size: 16px;
     font-family: 'Andale Mono', 'Space Mono', 'Helvetica';
     font-weight: 100;}
 
 p.metadata {
-    font-size: 19px;
-    color: var(--grey-text);
+    font-size: 14px;
+    font-weight: 300;
 }
 
 a {
@@ -34,12 +34,12 @@ a {
     color: var(--black-text);
 }
 
-p a, #nav a, #nav-2 a, #nav-hidden a, #bottom a {
+p a, #nav a, #nav-links-2 a, #nav-hidden a, #bottom a {
     border-bottom: 1px solid rgba(18, 18, 19, 0.3);
     transition: 0.1s ease;
 }
 
-p a:hover, #nav a:hover, #nav-2 a:hover, #nav-hidden a:hover, #bottom a:hover {
+p a:hover, #nav a:hover, #nav-links-2 a:hover, #nav-hidden a:hover, #bottom a:hover {
     border-bottom: 1px solid rgba(18, 18, 19, 0.87);
     transition: 0.1s ease;
     cursor: pointer;
@@ -237,7 +237,7 @@ p a:hover, #nav a:hover, #nav-2 a:hover, #nav-hidden a:hover, #bottom a:hover {
 }
 
 #plastiq .case-study-img {
-    background-image: linear-gradient(to top right, rgb(30, 28, 126) 0%, rgb(37, 64, 184) 100%);/* #070C56 0%, rgb(14, 56, 163) 100%); */
+    background-image: linear-gradient(to top right, rgb(30, 28, 126) 0%, rgb(37, 81, 202) 100%);/* #070C56 0%, rgb(14, 56, 163) 100%); */
 }
 
 #capstone .case-study-img {
@@ -282,7 +282,7 @@ p a:hover, #nav a:hover, #nav-2 a:hover, #nav-hidden a:hover, #bottom a:hover {
 }
 
 #case-study-intro h1 {
-    padding-top: 32vh;
+    padding-top: 33vh;
     margin-bottom: 60px;
 }
 
@@ -330,6 +330,11 @@ p a:hover, #nav a:hover, #nav-2 a:hover, #nav-hidden a:hover, #bottom a:hover {
 .m {
     max-width: 1080px;
     margin: 0 auto;
+}
+
+.s {
+    max-width: 560px;
+    margin: 30px auto 25px auto;
 }
 
 .in-text {
