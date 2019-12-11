@@ -17,7 +17,7 @@ h1, h2, h3 {
     font-weight: 400;
 }
 
-h1 {font-size: 38px; margin-top: 0;}
+h1 {font-size: 40px; margin-top: 0;}
 h2 {font-size: 28px; margin-bottom: 0;}
 h3 {font-size: 22px;}
 h4 {font-size: 17px;}
@@ -146,7 +146,7 @@ p a:hover, #nav a:hover, #nav-links-2 a:hover, #nav-hidden a:hover, #bottom a:ho
 
 /***** homepage styles *****/
 #home {
-    animation: dFadeInUp 1.2s;
+    animation: dFadeInUp 1.55s;
 }
 
 /* intro */
@@ -157,10 +157,10 @@ p a:hover, #nav a:hover, #nav-links-2 a:hover, #nav-hidden a:hover, #bottom a:ho
     max-width: 760px;
     display: flex;
     justify-content: space-between;
-    animation: fadeInUp 0.8s;
+    animation: fadeInUp 1s;
 }
 
-#home-intro h1 {font-size: 40px; line-height: 1em; margin-bottom: 22px;}
+#home-intro h1 {line-height: 1em; margin-bottom: 28px;}
 #home-intro p {margin-top: 0;}
 #home-intro .metadata {margin: 0;}
 
@@ -432,7 +432,7 @@ td:nth-child(1) {
 /***** animations *****/
 @keyframes fadeInUp {
     from {
-        transform: translate3d(0,20px,0);
+        transform: translate3d(0,30px,0);
         opacity: 0;
     }
 
@@ -444,12 +444,12 @@ td:nth-child(1) {
 
 @keyframes dFadeInUp {
     0% {
-        transform: translate3d(0,20px,0);
+        transform: translate3d(0,25px,0);
         opacity: 0;
     }
 
     30% {
-        transform: translate3d(0,20px,0);
+        transform: translate3d(0,25px,0);
         opacity: 0;
     }
 
