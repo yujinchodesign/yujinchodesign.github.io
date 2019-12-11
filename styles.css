@@ -4,7 +4,7 @@
 body {
     font-family: 'IBM Plex Sans', sans-serif;
     color: #222222;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 1.65em;
     margin: 0;
 
@@ -18,15 +18,13 @@ h1, h2, h3 {
 }
 
 h1 {font-size: 38px; margin-top: 0;}
-h2 {font-size: 24px;}
-h3 {font-size: 19px;}
-h4 {font-size: 16px;
-    font-family: 'Andale Mono', 'Space Mono', 'Helvetica';
-    font-weight: 100;}
+h2 {font-size: 28px; margin-bottom: 0;}
+h3 {font-size: 22px;}
+h4 {font-size: 17px;}
 
 p.metadata {
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 16px;
+    color: var(--grey-text);
 }
 
 a {
@@ -43,6 +41,10 @@ p a:hover, #nav a:hover, #nav-links-2 a:hover, #nav-hidden a:hover, #bottom a:ho
     border-bottom: 1px solid rgba(18, 18, 19, 0.87);
     transition: 0.1s ease;
     cursor: pointer;
+}
+
+#case-study-content p, #case-study-content li {
+    color: var(--grey-text);
 }
 
 /***** nav *****/
@@ -82,7 +84,7 @@ p a:hover, #nav a:hover, #nav-links-2 a:hover, #nav-hidden a:hover, #bottom a:ho
     left: 0;
     width: 100%;
     height: 100px;
-    animation: fadeIn 1.3s;
+    /* animation: fadeIn 1.3s;*/
     display: flex;
     justify-content: space-between;
     padding: 34px 0;
@@ -144,20 +146,21 @@ p a:hover, #nav a:hover, #nav-links-2 a:hover, #nav-hidden a:hover, #bottom a:ho
 
 /***** homepage styles *****/
 #home {
-    animation: fadeInUp 0.8s;
+    animation: dFadeInUp 1.2s;
 }
 
 /* intro */
 #home-intro {
-    margin: 30vh auto 120px auto;
+    margin: 33vh auto 120px auto;
     /* margin-bottom is 140px, padding-bottom: 160px;
     border-bottom: #DDD solid 1px; */
     max-width: 760px;
     display: flex;
     justify-content: space-between;
+    animation: fadeInUp 0.8s;
 }
 
-#home-intro h1 {font-size: 19px; line-height: 1em; margin-bottom: 22px;}
+#home-intro h1 {font-size: 40px; line-height: 1em; margin-bottom: 22px;}
 #home-intro p {margin-top: 0;}
 #home-intro .metadata {margin: 0;}
 
@@ -287,9 +290,8 @@ p a:hover, #nav a:hover, #nav-links-2 a:hover, #nav-hidden a:hover, #bottom a:ho
 }
 
 #case-study-intro p.intro {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.8em;
-    font-weight: 400;
 }
 
 #case-study-content {
@@ -435,6 +437,23 @@ td:nth-child(1) {
     }
 
     to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@keyframes dFadeInUp {
+    0% {
+        transform: translate3d(0,20px,0);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate3d(0,20px,0);
+        opacity: 0;
+    }
+
+    100% {
         transform: translate3d(0,0,0);
         opacity: 1
     }
