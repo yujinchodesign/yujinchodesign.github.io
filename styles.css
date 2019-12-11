@@ -146,7 +146,7 @@ p a:hover, #nav a:hover, #nav-links-2 a:hover, #nav-hidden a:hover, #bottom a:ho
 
 /***** homepage styles *****/
 #home {
-    animation: dFadeInUp 1.55s;
+    animation: dFadeInUp 2.1s;
 }
 
 /* intro */
@@ -157,7 +157,7 @@ p a:hover, #nav a:hover, #nav-links-2 a:hover, #nav-hidden a:hover, #bottom a:ho
     max-width: 760px;
     display: flex;
     justify-content: space-between;
-    animation: fadeInUp 1s;
+    animation: fadeInUp 1.4s;
 }
 
 #home-intro h1 {line-height: 1em; margin-bottom: 28px;}
