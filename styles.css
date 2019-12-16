@@ -13,7 +13,7 @@ body {
     --black-text: #222222; /* rgba(18, 18, 19, 0.87); */
     --grey-back: #F7F7F7;
 
-    --light-grey: #DEDEDE;
+    --light-grey: rgb(230, 230, 230);
 }
 
 p, h1, h2 {
@@ -23,8 +23,8 @@ p, h1, h2 {
 
 h1 {font-size: 48px; line-height: 1.7em;}
 h2 {font-size: 34px; margin-bottom: 38px;}
-h3 {font-size: 18px; font-weight: 400;}
-h4 {font-size: 16px; font-weight: 500;}
+h3 {font-size: 20px; font-weight: 400;}
+h4 {font-size: 17px; font-weight: 400;}
 
 
 #bottom {
@@ -50,7 +50,7 @@ h4 {font-size: 16px; font-weight: 500;}
     justify-content: space-between;
     width: 100%;
     border-bottom: 1px var(--light-grey) solid;
-    margin-top: 54px;
+    margin-top: 50px;
     padding-bottom: 18px;
 }
 
@@ -70,7 +70,7 @@ h4 {font-size: 16px; font-weight: 500;}
 }
 
 #hi {
-    margin: 244px 0 136px 0;
+    margin: 260px 0 150px 0;
 }
 
 #cs-grid {
@@ -229,6 +229,10 @@ p.intro {
     width: 45%;
 }
 
+.row .col-2-w {
+    width: 48%;
+}
+
 .line-concept p {
     font-size: 16px;
     color: var(--grey-text);
@@ -238,6 +242,10 @@ p.intro {
 /***** IMAGES  *****/
 .fw-text-floating {
     padding: 54px 12px 0 0;
+}
+
+.fw-floating {
+    padding: 54px 0 0 0;
 }
 
 .in-text {
@@ -274,15 +282,35 @@ p.intro {
     color: #3B7CFF;
 }
 
-.blue-line {
-    width: 20px;
-    background-color: #5895EE;
+.grey-h4 h4 {
+    color: var(--grey-text);
+}
+
+.blue-dash {
+    width: 24px;
+    background-color: rgb(180, 210, 255);
     height: 1px;
     margin: 0;
     padding: 0;
 }
 
-#pq-timing img {
+.blue-line {
+    width: 100%;
+    background-color: rgb(180, 210, 255);
+    height: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.grey-line {
+    width: 100%;
+    background-color: var(--light-grey);
+    height: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.shadows img {
     box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.151); 
     margin-bottom: 12px;
 }
@@ -302,6 +330,10 @@ p.intro {
     margin-bottom: 8px;
     line-height: 1.6em;
     font-weight: 300;
+}
+
+#pq-tin-flows img {
+    margin-top: 40px;
 }
 
 /***** animations *****/
