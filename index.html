@@ -5,75 +5,76 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id='nav-2'>
-            <div id='site-title'>
-                <a href="/index.html">Yujin Cho</a>
-            </div>
-            <div id='nav-links-wrapper'>
-                <div id='nav-links-2'>
-                    <a href="/index.html">Work</a>
-                    <a href="/about.html">About</a>
+        <div id='fixed-nav'>
+            <div id='nav-wrapper' class='wrapper'>
+                <div id='nav'>
+                    <div id='site-title'>
+                        <a href='index.html'>Yujin Cho</a>
+                    </div>
+                    <div id='site-links'>
+                        <a href='index.html'>Projects</a>
+                        <a>Resume</a>
+                        <a>About</a>
+                    </div>
                 </div>
             </div>
         </div>
-
-        
-        <section id='home-intro'>
-            <div id='intro-text-l'>
-                <h1><a href='about.html'>Hello</a></h1>
-                <p>I'm a product designer driven by the thrill of solving complex problems with reason and research. Currently living the SF startup life at <a href='plastiq.com' target='_blank'>Plastiq</a>.</p>
-
+        <div id='content-wrapper' class='wrapper'>
+            <div id='hi'>
+                <h1>Hi, I'm Yujin. I like designing thoughtful experiences that make life a bit easier. Currently at Plastiq.</h1>
             </div>
-        </section>
-        <div id='home'>
-        <section id='case-studies'>
-            <div class='case-study' id='plastiq'>
-                <a class='case-study-link' href='plastiq.html'>
-                    <div class='case-study-img'>
-                        <img src='./imgs/home-page/plastiq-3.png'>
+            
+            <div id='cs-grid'>
+                <div class='row'>
+                    <div class='cs-link'>
+                        <a href='plastiq.html'>
+                            <div class='cs-img plastiq'>
+                                <img src='imgs/home-page/plastiq-3.png'>
+                            </div>
+                            <div class='cs-text'>
+                                <h2>Unlocking Business Cash Flow</h2>
+                                <h3>Plastiq | 2019</h3>
+                            </div>
+                        </a>
                     </div>
-                    <div class='case-study-text'>
-                        <div class='case-study-text-wrapper'>
-                            <h3>Plastiq</h3>
+    
+                    <div class='cs-link'>
+                        <a href='plastiq.html'>
+                            <div class='cs-img capstone'>
+                                <img src='imgs/home-page/capstone.png'>
+                            </div>
+                            <div class='cs-text'>
+                                <h2>Creating Security Centric Cultures</h2>
+                                <h3>Senior Capstone | 2018</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class='row' id='bottom'>
+                    <div class='cs-link'>
+                        <a href='plastiq.html'>
+                            <div class='cs-img capstone'>
+                                <img src='imgs/home-page/capstone.png'>
+                            </div>
+                            <div class='cs-text'>
+                                <h2>Unlocking Business Cash Flow</h2>
+                                <h3>Plastiq | 2019</h3>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class='cs-link'>
+                        <div class='cs-img capstone'>
+                            <img src='imgs/home-page/capstone.png'>
+                        </div>
+                        <div class='cs-text'>
                             <h2>Unlocking Business Cash Flow</h2>
+                            <h3>Plastiq | 2019</h3>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
-            <div class='case-study' id='capstone'>
-                <a class='case-study-link' href='capstone.html'>
-                    <div class='case-study-img'>
-                        <img src='imgs/home-page/capstone.png'>
-                    </div>
-                    <div class='case-study-text'>
-                        <div class='case-study-text-wrapper'>
-                            <h3>Amazon Alert</h3>
-                            <h2>Creating Security-Centric Cultures</h2>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class='case-study' id='collegeconfident'>
-                <a class='case-study-link' href='collegeconfident.html'>
-                    <div class='case-study-img'>
-                        <img src='#'>
-                    </div>
-                    <div class='case-study-text'>
-                        <div class='case-study-text-wrapper'>
-                            <h3>Mobile</h3>
-                            <h2>Building College-Going Identities</h2>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </section>
-
-        <section id='bottom'>
-            <div id='bottom-l'>v1.0 2019</a></div>
-            <div id='bottom-r'>
-                <a href='spotify.com/user/yujin95' target='_blank'>☺</a>
-            </div>
-        </section>
-        </div>  
+        </div>
     </body>
 </html>
