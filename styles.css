@@ -24,7 +24,7 @@ p, h1, h2 {
 h1 {font-size: 48px; line-height: 1.7em;}
 h2 {font-size: 34px; margin-bottom: 38px;}
 h3 {font-size: 20px; font-weight: 400;}
-h4 {font-size: 17px; font-weight: 400;}
+h4 {font-size: 17px; font-weight: 400; margin: 0;}
 
 
 #bottom {
@@ -70,7 +70,7 @@ h4 {font-size: 17px; font-weight: 400;}
 }
 
 #hi {
-    margin: 260px 0 150px 0;
+    margin: 280px 0 170px 0;
 }
 
 #cs-grid {
@@ -116,7 +116,7 @@ h4 {font-size: 17px; font-weight: 400;}
 }
 
 .cs-link:hover .cs-img {
-    filter: opacity(90%);
+    filter: opacity(94%);
     transition: .12s ease;
 }
 
@@ -239,13 +239,17 @@ p.intro {
     font-weight: 400;
 }
 
+.line-concept h4 {
+    margin: 18px 0 14px 0;
+}
+
 /***** IMAGES  *****/
 .fw-text-floating {
     padding: 54px 12px 0 0;
 }
 
 .fw-floating {
-    padding: 54px 0 0 0;
+    padding: 60px 0 0 0;
 }
 
 .in-text {
@@ -253,7 +257,7 @@ p.intro {
 }
 
 .fw {
-    padding: 54px 0 54px 0;
+    padding: 60px 0 60px 0;
 }
 
 .img {
@@ -274,7 +278,7 @@ p.intro {
 
 .img .page {
     background-color: var(--grey-back);
-    padding: 120px;
+    padding: 110px;
 }
 
 /***** PLASTIQ CASE STUDY  *****/
@@ -326,14 +330,18 @@ p.intro {
 }
 
 #pq-timing p.label {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 8px;
     line-height: 1.6em;
-    font-weight: 300;
+    font-weight: 400;
+}
+
+#pq-tin-flows h4  {
+    margin-bottom: 6px;
 }
 
 #pq-tin-flows img {
-    margin-top: 40px;
+    margin-top: 32px;
 }
 
 /***** animations *****/
