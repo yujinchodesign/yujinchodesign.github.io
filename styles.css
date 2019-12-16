@@ -150,6 +150,11 @@ p.subtext {
     width: 60%;
 }
 
+.text-content a {
+    text-decoration: underline;
+    color: var(--black-text);
+}
+
 .text-content span {
     background-color: #EBF3FF;
 }
