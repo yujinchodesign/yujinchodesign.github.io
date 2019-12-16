@@ -87,7 +87,7 @@
 
             <div class='content-block'>
                 <div class='text-content'>
-                    <h3>Timing the ask</h3>
+                    <h3>When's the best time to ask for TINs?</h3>
                     <p>I used my learnings to identify and evaluate areas of the app where we could collect TINs. This helped guide my prototyping.</p>
                 </div>
                 <div class='fw img shadows' id='pq-timing'>
@@ -96,24 +96,24 @@
                             <div class='col-2'>
                                 <img src='imgs/plastiq/timing-reg.png'>
                                 <p class='label'><span class='pros'>Pros&nbsp; </span>Info collection expected</p>
-                                <p class='label'><span class='cons'>Cons&nbsp; </span>Cannot target Texas users, top of funnel, little real estate</p>
+                                <p class='label'><span class='red'>Cons&nbsp; </span>Cannot target Texas users, top of funnel, little real estate</p>
                             </div>
                             <div class='col-2'>
                                 <img src='imgs/plastiq/timing-in-app.png'>
                                 <p class='label'><span class='pros'>Pros&nbsp; </span>More investment in app, greater willingess to provide "heavier" info, scalable</p>
-                                <p class='label'><span class='cons'>Cons&nbsp; </span>Complexity around targeting Texas users, would be a new concept in app</p>
+                                <p class='label'><span class='red'>Cons&nbsp; </span>Complexity around targeting Texas users, would be a new concept in app</p>
                             </div>
                         </div>
                         <div class='row' id='bottom'>
                             <div class='col-2'>
                                 <img src='imgs/plastiq/timing-ca.png'>
                                 <p class='label'><span class='pros'>Pros&nbsp; </span><span class='blue-p'>Target Texas users by card selected</span></p>
-                                <p class='label'><span class='cons'>Cons&nbsp; </span>“Sensitive” flow, additional info collection is unexpected</p>
+                                <p class='label'><span class='red'>Cons&nbsp; </span>“Sensitive” flow, additional info collection is unexpected</p>
                             </div>
                             <div class='col-2'>
                                 <img src='imgs/plastiq/timing-payment.png'>
                                 <p class='label'><span class='pros'>Pros&nbsp; </span><span class='blue-p'>Target Texas users by billing address</span>, “lower pressure” flow (compared to payment)</p>
-                                <p class='label'><span class='cons'>Cons&nbsp; </span>Additional info collection is unexpected</p>
+                                <p class='label'><span class='red'>Cons&nbsp; </span>Additional info collection is unexpected</p>
                             </div>
                         </div>
                     </div>
@@ -139,46 +139,134 @@
 
             <div class='content-block'>
                 <div class='text-content'>
-                    <h3>Iterations</h3>
+                    <h3>Prototyping</h3>
                 </div>
                 <div class='fw img shadows'>
                     <div class='page'>
                         <div class='row'>
                             <div class='col-2'>
-                                <img src='imgs/plastiq/tin-iteration-1.png'>
+                                <img src='imgs/plastiq/addcard-1.gif'>
                             </div>
                             <div class='col-2'>
-                                <h4>A. Show TIN field when user selects Texas as state</h4>
-                                <p>Totally unexpected, users may not have TIN on hand, possibility for high drop off</p>
+                                <h4>Show field when user selects Texas as state <span class='red'>&nbsp;𝗫</span></h4>
+                                <p>Unusual in card addition flow, users may not have TIN on hand, possibility for high drop off</p>
                             </div>
                         </div>
                         <div class='row'>
                             <div class='col-2'>
-                                <img src='imgs/plastiq/tin-iteration-1.png'>
+                                <img src='imgs/plastiq/addcard-3.gif'>
                             </div>
                             <div class='col-2'>
-                                <h4>A. Show TIN field when user selects Texas as state</h4>
-                                <p>Totally unexpected, users may not have TIN on hand, possibility for high drop off</p>
+                                <h4>Show TIN field when user selects Texas as state <span class='red'>&nbsp;𝗫</span></h4>
+                                <p>users may not have TIN on hand, possibility for high drop off</p>
                             </div>
                         </div>
                         <div class='row'>
                             <div class='col-2'>
-                                <img src='imgs/plastiq/tin-iteration-1.png'>
+                                <img src='imgs/plastiq/addcard-4.gif'>
                             </div>
                             <div class='col-2'>
-                                <h4>A. Show TIN field when user selects Texas as state</h4>
-                                <p>Totally unexpected, users may not have TIN on hand, possibility for high drop off</p>
+                                <h4>Show TIN field when user selects Texas as state <span class='red'>&nbsp;𝗫</span></h4>
+                                <p>users may not have TIN on hand, possibility for high drop off</p>
                             </div>
                         </div>
-                        <div class='row'>
+                        <div class='row' id='bottom'>
                             <div class='col-2'>
-                                <img src='imgs/plastiq/tin-iteration-1.png'>
+                                <img src='imgs/plastiq/addcard-5.gif'>
                             </div>
                             <div class='col-2'>
-                                <h4>A. Show TIN field when user selects Texas as state</h4>
-                                <p>Totally unexpected, users may not have TIN on hand, possibility for high drop off</p>
+                                <h4>Show TIN field when user selects Texas as state <span class='green'>&nbsp;✓</span></h4>
+                                <p>users may not have TIN on hand, possibility for high drop off</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class='fw img shadows'>
+                    <div class='page'>
+                        <div class='row' id='bottom'>
+                            <div class='col-3'>
+                                <img src='imgs/plastiq/tin-interaction-1.png'>
+                            </div>
+                            <div class='col-3'>
+                                <img src='imgs/plastiq/tin-interaction-2.png'>
+                            </div>
+                            <div class='col-3'>
+                                <img src='imgs/plastiq/tin-interaction-3.png'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='content-block'>
+                <div class='text-content'>
+                    <h3>Testing & Refinement</h3>
+                    <p>I ran several tests on usertesting.com to account for any oversights and answer the following research questions:</p>
+                    <ul>
+                        <li>How do users react when they are asked for a TIN after adding a card?</li>
+                        <li>Do users understand why we’re asking for a TIN? What unanswered questions do they have?</li>
+                        <li>Do users understand how to add a TIN if they skip it in card addition?</li>
+                    </ul>
+                    <p>Testing helped uncover important insights about the language used: despite being technically accurate, using the acronym “TIN” along with “EIN” and “SSN” was confusing to users. I opted to use “Tax ID” instead of “TIN” to add clarity. Multiple users also expressed that they were wary to provide their personal information to an unfamiliar startup, so I added information about our data encryption.</p>
+                </div>
+            </div>
+
+            <div class='content-block'>
+                <div class='text-content'>
+                    <h3>Shipped Experience</h3>
+                </div>
+                <div class='fw img'>
+                    <div class='page-tin-final'>
+                        <img src='imgs/plastiq/tin-final-1.png'>
+                    </div>
+                </div>
+            </div>
+
+            <div class='cs-sub-intro grey-top-border'>
+                <div class='text-content'>
+                    <h2>Improving User Acquisition</h2>
+                    <p>In the registration flow, our highest drop-off occurs at email confirmation. We decided to conduct an experiment <span>moving email confirmation in-app to reduce friction</span> in registration and increase user acquisition.</p>
+                </div>
+                <div class='cs-sub-details'>
+                    <div class='detail'>
+                        <p class='label'>Product&nbsp;</p>
+                        <p>Plastiq Business App</p>
+                    </div>
+                    <div class='detail'>
+                        <p class='label'>Timeline&nbsp;</p>
+                        <p>2 weeks</p>
+                    </div>
+                    <div class='detail' id='bottom'>
+                        <p class='label'>Team&nbsp;</p>
+                        <p>PM, 2 Engineers, Me</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class='content-block'>
+                <div class='text-content'>
+                    <h3>"We need new users, now"</h3>
+                    <p>This project emerged during a high-pressure period where we were focused on acquiring new users quickly. Our Head of Operations suggested that we try improving user acquisition by modifying the registration flow, so I audited and gathered data on the flow to identify areas for improvement.</p>
+                </div>
+            </div>
+
+            <div class='cs-sub-intro grey-top-border'>
+                <div class='text-content'>
+                    <h2>Understanding SMBs</h2>
+                    <p>In the registration flow, our highest drop-off occurs at email confirmation. We decided to conduct an experiment <span>moving email confirmation in-app to reduce friction</span> in registration and increase user acquisition.</p>
+                </div>
+                <div class='cs-sub-details'>
+                    <div class='detail'>
+                        <p class='label'>Product&nbsp;</p>
+                        <p>Plastiq Business App</p>
+                    </div>
+                    <div class='detail'>
+                        <p class='label'>Timeline&nbsp;</p>
+                        <p>2 weeks</p>
+                    </div>
+                    <div class='detail' id='bottom'>
+                        <p class='label'>Team&nbsp;</p>
+                        <p>PM, 2 Engineers, Me</p>
                     </div>
                 </div>
             </div>
