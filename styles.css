@@ -26,6 +26,14 @@ h2 {font-size: 34px; margin-bottom: 38px;}
 h3 {font-size: 22px; font-weight: 400;}
 h4 {font-size: 17px; font-weight: 400; margin: 0;}
 
+p.subtext {
+    font-size: 16px;
+    color: var(--grey-text);
+    font-weight: 400;
+    line-height: 1.6em;
+    margin-bottom: 8px;
+}
+
 
 #bottom {
     margin-bottom: 0;
@@ -57,11 +65,9 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
 #nav a {
     color: var(--black-text);
     text-decoration: none;
-}
-
-#nav #site-title {
     font-weight: 400;
 }
+
 #nav #site-links {
     font-size: 16px;
 }
@@ -241,7 +247,7 @@ p.intro {
 }
 
 .line-concept h4 {
-    margin: 18px 0 14px 0;
+    margin: 22px 0 14px 0;
 }
 
 /***** IMAGES  *****/
@@ -250,7 +256,7 @@ p.intro {
 }
 
 .fw-floating {
-    padding: 66px 0 0 0;
+    padding: 60px 0 0 0;
 }
 
 .in-text {
@@ -258,7 +264,7 @@ p.intro {
 }
 
 .fw {
-    padding: 66px 0 80px 0;
+    padding: 60px 0 72px 0;
 }
 
 .img {
@@ -279,12 +285,21 @@ p.intro {
 
 .img .page {
     background-color: var(--grey-back);
-    padding: 110px;
+    padding: 120px 110px;
 }
 
 .img .page-tin-final {
-    background-image: linear-gradient(to top right, rgba(241, 246, 255, 0.664) 0%, rgba(239, 249, 255, 0.541) 100%);/* #070C56 0%, rgb(14, 56, 163) 100%); */
-    padding: 110px;
+    background-image: linear-gradient(to top right, #1D2255 0%, #2A4173 100%);/* #070C56 0%, rgb(14, 56, 163) 100%); */
+    padding: 120px 110px;
+}
+
+.page-tin-final h4 {
+    color: #fff;
+    margin-bottom: 48px;
+}
+
+.page-tin-final img {
+    margin-bottom: 100px;
 }
 
 /***** PLASTIQ CASE STUDY  *****/
@@ -331,13 +346,18 @@ p.intro {
 }
 
 #pq-timing span.pros {
-    font-weight: 600;
+    font-weight: 500;
     color: #3B7CFF;
 }
 
 span.red {
-    font-weight: 600;
+    font-weight: 500;
     color: #9A0618;
+}
+
+span.blue-p {
+    color: #222;
+    background-color: #EBF3FF;
 }
 
 span.green {
@@ -353,7 +373,7 @@ span.green {
 }
 
 #pq-tin-flows h4  {
-    margin-bottom: 6px;
+    margin-bottom: 5px;
 }
 
 #pq-tin-flows img {
