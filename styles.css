@@ -41,7 +41,13 @@ p.subtext {
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 200px;
+    padding: 0 240px;
+}
+
+.nav-wrapper { /* use regular wrapper if you want old design */
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 100px;
 }
 
 #fixed-nav {
@@ -49,39 +55,64 @@ p.subtext {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.80);
     z-index: 1;
+}
+
+#nf-nav {
+    background-color: rgba(255, 255, 255, 0.60);
+    z-index: 1;
+    width: 100%;
 }
 
 #nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-top: 24px;
     border-bottom: 1px var(--light-grey) solid;
-    margin-top: 44px;
-    padding-bottom: 16px;
+    padding: 16px 0;
 }
 
 #nav a {
     color: var(--black-text);
     text-decoration: none;
+}
+
+#nav #site-title {
+    font-size: 18px;
     font-weight: 400;
 }
 
 #nav #site-links {
     font-size: 16px;
+    font-weight: 400;
 }
 #nav #site-links a {
     padding-left: 40px;
 }
 
+#hi span.grey {
+    font-size: 16px;
+}
+
 #hi {
-    margin: 252px 0 142px 0;
+    margin: 160px 0 138px 0;
+}
+
+#hi a {
+    color: var(--black-text);
+    text-decoration: none;
+}
+
+#hi h1 {
+    font-size: 52px;
+    line-height: 1.6em;
 }
 
 #cs-grid {
     width: 100%;
-    margin: 0 0 200px 0;
+    margin: 0 0 140px 0;
 }
 
 .row { 
@@ -113,17 +144,22 @@ p.subtext {
 }
 
 .cs-text {
-    margin-top: 16px;
+    margin-top: 20px;
 }
 
 .cs-link:hover img {
     transform: scale(1.03);
+    transition: .1s ease;
+}
+
+.cs-link:hover .plastiq {
+    opacity: 0.95;
     transition: .15s ease;
 }
 
-.cs-link:hover .cs-img {
-    filter: opacity(94%);
-    transition: .12s ease;
+.cs-link:hover .capstone, .cs-link:hover .college, .cs-link:hover .d4sd {
+    opacity: 0.85;
+    transition: .15s ease;
 }
 
 .cs-img {
@@ -138,7 +174,7 @@ p.subtext {
 }
 
 .plastiq {
-    background-image: linear-gradient(to top right, #1D1B7F 0%, #244DC5 100%);/* #070C56 0%, rgb(14, 56, 163) 100%); */
+    background-image: linear-gradient(to top right, rgb(39, 21, 141) 0%, rgb(52, 63, 216) 100%); /* #070C56 0%, rgb(14, 56, 163) 100%); */
 }
 
 .capstone {
@@ -156,12 +192,12 @@ p.subtext {
 }
 
 .text-content span {
-    background-color: #EBF3FF;
+    background-color: rgb(240, 241, 255);
 }
 
 #cs-hero-img {
     width: 100%;
-    margin: 136px 0 0 0;
+    margin: 124px 0 0 0;
 }
 
 #cs-hero-img img {
@@ -199,7 +235,7 @@ p.intro {
 
 .cs-sub-details {
     width: auto;
-    border-left: solid 1px #3B7CFF;
+    border-left: solid 1px rgb(50, 17, 238);
     padding-left: 18px;
     height: auto;
 }
@@ -270,6 +306,13 @@ p.intro {
 
 .fw {
     padding: 60px 0 72px 0;
+    width: 100%;
+}
+
+.centered-m {
+    padding: 60px 0 72px 0;
+    width: 960px;
+    margin: 0 auto;
 }
 
 .img {
@@ -278,7 +321,7 @@ p.intro {
 
 .img img {
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .img p.label {
@@ -292,6 +335,8 @@ p.intro {
     background-color: var(--grey-back);
     padding: 120px 110px;
 }
+
+
 
 .img .page-tin-final {
     background-image: linear-gradient(to top right, #1D2255 0%, #2A4173 100%);/* #070C56 0%, rgb(14, 56, 163) 100%); */
@@ -309,7 +354,7 @@ p.intro {
 
 /***** PLASTIQ CASE STUDY  *****/
 .blue-h4 h4 {
-    color: #3B7CFF;
+    color: rgb(50, 17, 238);
 }
 
 .grey-h4 h4 {
@@ -318,7 +363,7 @@ p.intro {
 
 .blue-dash {
     width: 24px;
-    background-color: rgb(180, 210, 255);
+    background-color: rgb(169, 176, 255);
     height: 1px;
     margin: 0;
     padding: 0;
@@ -326,7 +371,7 @@ p.intro {
 
 .blue-line {
     width: 100%;
-    background-color: rgb(180, 210, 255);
+    background-color: rgb(169, 176, 255);
     height: 1px;
     margin: 0;
     padding: 0;
@@ -355,6 +400,11 @@ p.intro {
     color: #3B7CFF;
 }
 
+#pq-timing .subtext {
+    color: var(--black-text);
+    font-weight: 300;
+}
+
 span.red {
     font-weight: 500;
     color: #9A0618;
@@ -368,6 +418,10 @@ span.blue-p {
 span.green {
     font-weight: 600;
     color: rgb(5, 189, 134);
+}
+
+span.grey {
+    color: var(--grey-text);
 }
 
 #pq-timing p.label {
