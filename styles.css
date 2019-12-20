@@ -41,7 +41,7 @@ p.subtext {
 .wrapper {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 240px;
+    padding: 0 220px;
 }
 
 .nav-wrapper { /* use regular wrapper if you want old design */
@@ -55,7 +55,7 @@ p.subtext {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.80);
+    background-color: rgba(255, 255, 255, 0.90);
     z-index: 1;
 }
 
@@ -69,7 +69,7 @@ p.subtext {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 32px;
+    margin-top: 30px;
     border-bottom: 1px var(--light-grey) solid;
     padding: 14px 0;
 }
@@ -97,7 +97,7 @@ p.subtext {
 }
 
 #hi {
-    margin: 150px 0 138px 0;
+    margin: 136px 0 128px 0;
     animation: fadeInUp 1.4s;
 }
 
