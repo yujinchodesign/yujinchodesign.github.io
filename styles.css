@@ -101,6 +101,10 @@ p.subtext {
     animation: fadeInUp 1.4s;
 }
 
+#hi h1 {
+    font-size: 52px;
+}
+
 
 #hi a {
     color: var(--black-text);
