@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>About Yujin Cho</title>
+        <title>Case Study Page</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id='nav-2'>
-            <div id='site-title'>
-                <a href="/index.html">Yujin Cho</a>
-            </div>
-            <div id='nav-links-wrapper'>
-                <div id='nav-links-2'>
-                    <a href="/index.html">Work</a>
-                    <a href="/about.html">About</a>
+        <div id='fixed-nav'>
+            <div id='nav-wrapper' class='wrapper'>
+                <div id='nav'>
+                    <div id='site-title'>
+                        <a href='index.html'>Yujin Cho</a>
+                    </div>
+                    <div id='site-links'>
+                        <a href='index.html'>Projects</a>
+                        <a>Resume</a>
+                        <a href='about.html'>About</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <section id='about'>
-            <div id='about-me-wrapper'>
-                <div id='about-img'>
-                    <img src='imgs/me.jpeg'>
-                </div>
-                <div id='about-txt'>
-                    <h1>Hey, I'm Yujin.</h1>
-                    <p>Product design blends my passions for learning about people’s unique experiences, creating order out of chaos, and visual problem solving. I love working with dedicated people to solve interesting and meaningful problems, and I find it thrilling to constantly have my thoughts challenged throughout the design process.</p>
-                    <p>I'm currently designing experiences that help small businesses grow at <a href='plastiq.com'>Plastiq</a>. Before Plastiq, I interned at SAP Concur and graduated with degrees in human-centered design and economics from the University of Washington.</p>
+        <div id='content-wrapper' class='wrapper case-study'>
+            <div class='content-block about'>
+                <div class='row img'>
+                    <div class='col-2'>
+                        <img src='imgs/me.jpeg'>
+                    </div>
+                    <div class='col-2 text'>
+                        <h1>Hi, I'm Yujin.</h1>
+                        <p>I'm interested in how interfaces can shape people's behavior and help them do more.</p>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
     </body>
 </html>
