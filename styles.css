@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600&display=swap|IBM+Plex+Sans:300,400,500,600,700');
 
 /***** text styles *****/
 body {
@@ -351,6 +351,19 @@ p.intro {
     padding: 120px 110px;
 }
 
+.page span.heading {
+    font-family: 'IBM Plex Mono';
+    font-weight: 500;
+}
+
+.page h4.actual {
+    margin-bottom: 38px;
+}
+
+.page p {
+    font-weight: 400;
+}
+
 
 
 .img .page-tin-final {
@@ -410,19 +423,20 @@ p.intro {
     margin-bottom: 8px;
 }
 
+
 #pq-timing span.pros {
     font-weight: 500;
     color: rgb(50, 17, 238);
 }
 
 #pq-timing .subtext {
-    color: var(--black-text);
-    font-weight: 300;
+    color: var(--grey-text);
 }
 
 span.red {
     font-weight: 500;
     color: #9A0618;
+
 }
 
 span.blue-p {
