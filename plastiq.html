@@ -87,7 +87,7 @@
 
             <div class='content-block'>
                 <div class='text-content'>
-                    <h3>When's the best time to ask for TINs?</h3>
+                    <h3>Defining Collection Points</h3>
                     <p>I used my learnings to identify and evaluate areas of the app where we could collect TINs. This helped guide my prototyping.</p>
                 </div>
                 <div class='fw img shadows' id='pq-timing'>
@@ -139,7 +139,7 @@
 
             <div class='content-block'>
                 <div class='text-content'>
-                    <h3>Prototyping</h3>
+                    <h3>Exploration</h3>
                 </div>
                 <div class='fw img shadows'>
                     <div class='page'>
@@ -148,17 +148,8 @@
                                 <img src='imgs/plastiq/addcard-1.gif'>
                             </div>
                             <div class='col-2'>
-                                <h4>Show field when user selects Texas as state <span class='red'>&nbsp;𝗫</span></h4>
-                                <p class='subtext'>Unusual in card addition flow, users may not have TIN on hand, possibility for high drop off</p>
-                            </div>
-                        </div>
-                        <div class='row'>
-                            <div class='col-2'>
-                                <img src='imgs/plastiq/addcard-3.gif'>
-                            </div>
-                            <div class='col-2'>
-                                <h4>Show TIN field when user selects Texas as state <span class='red'>&nbsp;𝗫</span></h4>
-                                <p class='subtext'>users may not have TIN on hand, possibility for high drop off</p>
+                                <h5>On choosing Texas in the billing address form<span class='red'>&nbsp;𝗫</span></h5>
+                                <p class='subtext'>Users know card add flows, seeing additional field may lead to drop-off despite optionality</p>
                             </div>
                         </div>
                         <div class='row'>
@@ -166,32 +157,34 @@
                                 <img src='imgs/plastiq/addcard-4.gif'>
                             </div>
                             <div class='col-2'>
-                                <h4>Show TIN field when user selects Texas as state <span class='red'>&nbsp;𝗫</span></h4>
-                                <p class='subtext'>users may not have TIN on hand, possibility for high drop off</p>
+                                <h4>End of card add confirmation<span class='red'>&nbsp;𝗫</span></h4>
+                                <p class='subtext'>Seeing confirmation prior to actual finish is confusing and adds to alarm of unexpected field</p>
                             </div>
                         </div>
-                        <div class='row' id='bottom'>
+                        <div class='row'>
                             <div class='col-2'>
                                 <img src='imgs/plastiq/addcard-5.gif'>
                             </div>
                             <div class='col-2'>
-                                <h4>Show TIN field when user selects Texas as state <span class='green'>&nbsp;✓</span></h4>
-                                <p class='subtext'>users may not have TIN on hand, possibility for high drop off</p>
+                                <h4>End of add card flow<span class='red'>&nbsp;𝗫</span></h4>
+                                <p class='subtext'>Unclear whether the card has been saved or not, implies that TIN is required to save card</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class='fw img'>
-                    <div class='page'>
+                        <div class='row'>
+                            <div class='col-2'>
+                                <img src='imgs/plastiq/add-card-10.gif'>
+                            </div>
+                            <div class='col-2'>
+                                <h4>Extension of add card flow<span class='green'>&nbsp;✓</span></h4>
+                                <p class='subtext'>Familiarity of moving between modals makes this the least alarming</p>
+                            </div>
+                        </div>
                         <div class='row' id='bottom'>
-                            <div class='col-3'>
-                                <img src='imgs/plastiq/tin-interaction-1.png'>
+                            <div class='col-2'>
+                                <img src='imgs/plastiq/tin-tag.png'>
                             </div>
-                            <div class='col-3'>
-                                <img src='imgs/plastiq/tin-interaction-2.png'>
-                            </div>
-                            <div class='col-3'>
-                                <img src='imgs/plastiq/tin-interaction-3.png'>
+                            <div class='col-2'>
+                                <img src='imgs/plastiq/tin-tag-modal.png'>
                             </div>
                         </div>
                     </div>
@@ -207,7 +200,7 @@
                         <li>Do users understand why we’re asking for a TIN? What unanswered questions do they have?</li>
                         <li>Do users understand how to add a TIN if they skip it in card addition?</li>
                     </ul>
-                    <p>Testing helped uncover important insights about the language used: despite being technically accurate, using the acronym “TIN” along with “EIN” and “SSN” was confusing to users. I opted to use “Tax ID” instead of “TIN” to add clarity. Multiple users also expressed that they were wary to provide their personal information to an unfamiliar startup, so I added information about our data encryption.</p>
+                    <p>Testing helped uncover important insights about the language used: despite being technically accurate, <span>using the acronym “TIN” along with “EIN” and “SSN” was confusing to users</span>. I opted to use “Tax ID” instead of “TIN” to add clarity. Multiple users also expressed that they were <span>wary to provide their personal information to an unfamiliar startup</span>, so I added information about our data encryption.</p>
                 </div>
             </div>
 
@@ -249,28 +242,110 @@
             <div class='content-block'>
                 <div class='text-content'>
                     <h3>"We need new users, now"</h3>
-                    <p>This project emerged during a high-pressure period where we were focused on acquiring new users quickly. Our Head of Operations suggested that we try improving user acquisition by modifying the registration flow, so I audited and gathered data on the flow to identify areas for improvement.</p>
+                    <p class='space'>This project emerged during a high-pressure period where we were <span>focused on acquiring new users <i>quickly</i></span>. Our Head of Operations suggested that we try improving user acquisition by modifying the registration flow, so I audited and gathered data on the flow to identify areas for improvement.</p>
+                    <p>I identified an assortment of UX issues (e.g., confusing copy, unfamiliar UI patterns, long loading times) but funnel data suggested that addressing these “cosmetic” issues wouldn’t result in big wins. After further investigation and consideration of Plastiq’s immediate needs, <span>I proposed an experimentation plan where we start by addressing the highest drop-off point—30% at email confirmation</span>—and subsequently address other issues in the flow.</p>
+                </div>
+                <div class='fw-floating img'>
+                    <img src='imgs/plastiq/experiment.png'>
+                </div>
+            </div>
+
+            <div class='content-block'>
+                <div class='text-content'>
+                    <h3>Putting in the right blocks</h3>
+                    <p>A verified email is key to unlocking the bulk of our app’s core functionality to mitigate the risk for illegitimate payments. We anticipated that many users might verify their email shortly after registration (based on our personal tendencies), but those that didn’t needed to be <span>blocked from adding cards and submitting payments</span>.</p>
+                </div>
+            </div>
+
+            <div class='content-block'>
+                <div class='text-content'>
+                    <h3>1st approach: Let users access as much as possible</h3>
+                    <p>My first instinct was to <span>give users as much access as we could provide</span>. If we could do a good job educating users on these blocks and the steps to remove them, users could build trust exploring the app and move forward when they were ready.</p>
+                    <div class='in-text-img img'>
+                        <img src='imgs/plastiq/email-flow-1.png'>
+                    </div>
+                </div>
+                <div class='row img'>
+                    <div class='col-2-w'>
+                        <img src='imgs/plastiq/email-flow-1-1.png'>
+                        <p class='label'>Banner educating users to confirm email upon app entry</p>
+                    </div>
+                    <div class='col-2-w'>
+                        <img src='imgs/plastiq/email-gif-1st.gif'>
+                        <p class='label'>Users are educated throughout the payment flow that they will not be able to submit</p>
+                    </div>
+                </div>
+                <div class='row img'>
+                    <div class='col-2-w'>
+                        <img src='imgs/plastiq/email-email.png'>
+                    </div>
+                    <div class='col-2-w'>
+                        <img src='imgs/plastiq/email-cd.png'>
+                        <p class='label'>Confirming email drops user into card addition (last step before being able to submit payment)</p>
+                    </div>
+                </div>
+                <div class='text-content'>
+                    <p>I received the feedback that <span>users might be taken aback if they were blocked at the end of a flow (on payment review)</span>. I had doubts about this feedback because it seemed to go against the hypothesis (greater access → greater investment) and thought this reaction could be prevented with the appropriate user education.</p>
+                </div>
+            </div>
+
+            <div class='content-block'>
+                <div class='text-content'>
+                    <h3>Testing: People don’t pay attention</h3>
+                    <p>With my uncertainties, I tested the design with three coworkers. People were indeed taken aback by the block despite the education; one user initially read the notice but was still surprised by the block on payment review because their involvement in the flow had wholly captured their attention.</p>
+                </div>
+            </div>
+
+            <div class='content-block'>
+                <div class='text-content'>
+                    <h3>2nd approach: Give them a preview</h3>
+                    <p>I decided to move the block to the end of the recipient addition flow. This would allow users to complete one of the core flows in the app before being blocked from further activity. When I tested again, users were much more forgiving with the block.</p>
+                    <div class='in-text-img img'>
+                        <img src='imgs/plastiq/email-flow-2.png'>
+                    </div>
+                </div>
+                <div class='row img'>
+                    <div class='col-2-w'>
+                        <img src='imgs/plastiq/email-recipient.gif'>
+                        <p class='label'>Upon adding a recipient, users are blocked from paying them</p>
+                    </div>
+                    <div class='col-2-w'>
+                        <img src='imgs/plastiq/email-home.gif'>
+                    </div>
                 </div>
             </div>
 
             <div class='cs-sub-intro grey-top-border'>
                 <div class='text-content'>
                     <h2>Understanding SMBs</h2>
-                    <p>In the registration flow, our highest drop-off occurs at email confirmation. We decided to conduct an experiment <span>moving email confirmation in-app to reduce friction</span> in registration and increase user acquisition.</p>
+                    <p>I joined Plastiq when the company had just pivoted from consumer to small and midsize business (SMB) users. Having expressed my interest in user research, I was given the opportunity to lead a foundational user research effort on how we could best serve SMBs with the new business product.</p>
                 </div>
                 <div class='cs-sub-details'>
                     <div class='detail'>
-                        <p class='label'>Product&nbsp;</p>
-                        <p>Plastiq Business App</p>
+                        <p class='label'>Role&nbsp;</p>
+                        <p>UX Research Lead</p>
                     </div>
                     <div class='detail'>
                         <p class='label'>Timeline&nbsp;</p>
-                        <p>2 weeks</p>
+                        <p>2.5 months</p>
                     </div>
-                    <div class='detail' id='bottom'>
-                        <p class='label'>Team&nbsp;</p>
-                        <p>PM, 2 Engineers, Me</p>
-                    </div>
+                </div>
+            </div>
+            <div class='content-block'>
+                <div class='text-content'>
+                    <h3>Defining Learning Goals</h3>
+                    <p>I started by interviewing our sales, product, and customer service teams and evaluating popular SMB finance products (e.g., Quickbooks, Stripe, PayPal) to get a better sense of who we were targeting and what they valued. I also ran a “research framing” session with our product team to understand what we knew vs. what we wanted to learn.</p>
+                </div>
+                <div class='fw img'>
+                    <img src='imgs/plastiq/research-1.png'>
+                </div>
+                <div class='text-content'>
+                    <p>I recruited and interviewed 20 people that fit our target profile (e.g., SMB owners, partners, accountants). I used <a href=‘https://en.wikipedia.org/wiki/Grounded_theory’>grounded theory research methods</a> to identify themes in the data; in retrospect this wasn't the best approach given my short timeline and research purposes, but it helped me get very close to the data and uncover nuanced topics.</p>
+                    <p>I shared my findings via a holistic report, personas, and several presentations to various teams including a lunch and learn with the entire company.</p>        
+                </div>
+                <div class='fw img'>
+                    <img src='imgs/plastiq/research-2.png'>
+                    <p class='label'>Lunch and learning</p>
                 </div>
             </div>
     </body>

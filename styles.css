@@ -98,12 +98,9 @@ p.subtext {
 
 #hi {
     margin: 150px 0 138px 0;
-    animation: fadeInUp 1.2s;
+    animation: fadeInUp 1.4s;
 }
 
-#hi h1 {
-    font-size: 54px;
-}
 
 #hi a {
     color: var(--black-text);
@@ -111,13 +108,13 @@ p.subtext {
 }
 
 .case-study {
-    animation: fadeInUp 0.8s;
+    animation: fadeInUp 1s;
 }
 
 #cs-grid {
     width: 100%;
     margin: 0 0 140px 0;
-    animation: dFadeInUp 1.5s;
+    animation: dFadeInUp 1.6s;
 }
 
 .row { 
@@ -190,6 +187,10 @@ p.subtext {
 /***** CASE STUDY PAGE *****/
 .text-content {
     width: 60%;
+}
+
+.text-content p.space {
+    margin-bottom: 20px;
 }
 
 .text-content a {
@@ -310,6 +311,10 @@ p.intro {
     padding: 36px 12px 36px 0;
 }
 
+.in-text-img {
+    padding: 60px 0;
+}
+
 .fw {
     padding: 60px 0 72px 0;
     width: 100%;
@@ -403,7 +408,7 @@ p.intro {
 
 #pq-timing span.pros {
     font-weight: 500;
-    color: #3B7CFF;
+    color: rgb(50, 17, 238);
 }
 
 #pq-timing .subtext {
@@ -418,7 +423,7 @@ span.red {
 
 span.blue-p {
     color: #222;
-    background-color: #EBF3FF;
+    background-color: rgb(240, 241, 255);
 }
 
 span.green {
@@ -448,7 +453,7 @@ span.grey {
 /***** animations *****/
 @keyframes fadeInUp {
     from {
-        transform: translate3d(0,25px,0);
+        transform: translate3d(0,30px,0);
         opacity: 0;
     }
 
@@ -460,12 +465,12 @@ span.grey {
 
 @keyframes dFadeInUp {
     0% {
-        transform: translate3d(0,20px,0);
+        transform: translate3d(0,30px,0);
         opacity: 0;
     }
 
-    22% {
-        transform: translate3d(0,20px,0);
+    18% {
+        transform: translate3d(0,30px,0);
         opacity: 0;
     }
 
