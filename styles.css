@@ -193,11 +193,11 @@ p.subtext {
     width: 60%;
 }
 
-.text-content p.space {
+.text-content p.space, .text p.space {
     margin-bottom: 20px;
 }
 
-.text-content a {
+.text-content a, .text a {
     text-decoration: underline;
     color: var(--black-text);
 }
