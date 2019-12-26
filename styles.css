@@ -102,7 +102,7 @@ p.subtext {
 }
 
 #hi h1 {
-    font-size: 52px;
+    font-size: 44px;
 }
 
 
@@ -155,8 +155,8 @@ p.subtext {
 }
 
 .cs-link:hover img {
-    transform: scale(1.03);
-    transition: .1s ease;
+    transform: scale(1.04);
+    transition: .25s ease;
 }
 
 .cs-link:hover .plastiq {
@@ -230,7 +230,7 @@ p.intro {
 }
 
 #cs-intro-details {
-    margin-top: 60px;
+    margin-top: 80px;
     display: flex;
     padding-bottom: 140px;
     justify-content: space-between;
@@ -456,7 +456,7 @@ p.intro {
 
 .grey-top-border {
     border-top: 1px solid  var(--light-grey);
-    padding-top: 100px;
+    padding-top: 140px;
 }
 
 .shadows img {
