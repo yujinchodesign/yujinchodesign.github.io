@@ -186,6 +186,11 @@ p.subtext {
     display: block;
 }
 
+.img #me {
+    width: 40%;
+    float: left;
+}
+
 .plastiq {
     background-image: linear-gradient(to top right, rgb(39, 21, 141) 0%, rgb(52, 63, 216) 100%); /* #070C56 0%, rgb(14, 56, 163) 100%); */
 }
