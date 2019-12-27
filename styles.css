@@ -35,6 +35,12 @@ p.subtext {
 }
 
 
+.details p.label {
+    font-size: 14px;
+    line-height: 1.4em;
+    margin-bottom: 8px;
+}
+
 #bottom {
     margin-bottom: 0;
 }
@@ -80,7 +86,7 @@ p.subtext {
 }
 
 #nav #site-title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
 }
 
