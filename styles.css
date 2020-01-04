@@ -45,9 +45,9 @@ p.subtext {
     margin-bottom: 0;
 }
 .wrapper {
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 220px;
+    padding: 0 60px;
 }
 
 .nav-wrapper { /* use regular wrapper if you want old design */
@@ -125,6 +125,31 @@ p.subtext {
     width: 100%;
     margin: 0 0 140px 0;
     animation: dFadeInUp 1.6s;
+}
+@media only screen and (max-width: 960px) {
+    #cs-grid .row {
+        display: block;
+    }
+
+    #cs-grid .row .col-3 {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    #hi h1 {
+        font-size: 38px;
+    }
+} 
+
+@media only screen and (max-width: 580px) {
+    .wrapper {
+        padding: 0 20px;
+    }
+
+    #hi h1 {
+        font-size: 24px;
+        font-weight: 400;
+    }
 }
 
 .row { 
