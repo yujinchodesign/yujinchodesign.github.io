@@ -3,9 +3,29 @@
     <head>
         <title>Portfolio of Yujin Cho</title>
         <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <body>
+        <script>
+            function showHideMenu() {
+                var x = document.getElementById("mobileMenu");
+                if (x.style.display === 'none') {
+                    x.style.display = 'block';
+                } else {
+                    x.style.display = 'none';
+                }
+            }
+        </script>
+        <div id='mobileMenu' style='display: none;'>
+            <div id='mobileMenuLinks'>
+                <div id='closeMenu' onclick="showHideMenu()">×</div>
+                <div id='mobile-site-links'>
+                    <a href='index.html'>Projects</a><br>
+                    <a>Resume</a><br>
+                    <a href='about.html'>About</a>
+                </div>
+            </div>
+        </div>
         <div id='nf-nav'>
             <div id='nav-wrapper' class='wrapper'>
                 <div id='nav'>
@@ -17,12 +37,10 @@
                         <a>Resume</a>
                         <a href='about.html'>About</a>
                     </div>
-                    <div id='hamburger'>
-                        <a id='hamburger-icon'>
-                            <div class='hamburger-line'></div>
-                            <div class='hamburger-line'></div>
-                            <div class='hamburger-line'></div>
-                        </a>
+                    <div id='hamburger' onclick="showHideMenu()">
+                        <div class='hamburger-line'></div>
+                        <div class='hamburger-line'></div>
+                        <div class='hamburger-line'></div>
                     </div>
                 </div>
             </div>
