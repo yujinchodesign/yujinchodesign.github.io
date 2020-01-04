@@ -16,17 +16,22 @@ body {
     --light-grey: rgb(230, 230, 230);
 }
 
-p, h1, h2 {
+p {
     font-weight: 300;
     margin: 0;
 }
 
-h1 {font-size: 48px; line-height: 1.4em; margin-bottom: 8px;}
-h2 {font-size: 34px; margin-bottom: 34px; line-height: 1.4em;}
 h3 {font-size: 22px; font-weight: 400;}
 h4 {font-size: 17px; font-weight: 400; margin: 0;}
 
 @media only screen and (min-width: 320px) {
+    h1 {font-size: 36px; line-height: 1.4em; margin-bottom: 8px;}
+    h2 {font-size: 30px; margin-bottom: 34px; line-height: 1.4em;}
+
+    h1, h2 {
+        font-weight: 400;
+    }
+    
     #cs-grid {
         animation: dFadeInUp 1.6s;
     }
@@ -60,6 +65,12 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
 
     .text-content {
         width: 100%;
+    }
+
+    #cs-intro {
+        margin-top: 40px;
+        padding-bottom: 140px;
+        border-bottom: 1px var(--light-grey) solid; 
     }
 
     .cs-sub-intro {
@@ -117,6 +128,13 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
 }
 
 @media only screen and (min-width: 580px) {
+    h1 {font-size: 44px;}
+    h2 {font-size: 34px;}
+    h1, h2 {
+        font-weight: 300;
+    }
+
+
     #hi h1 {
         font-size: 38px;
         font-weight: 300;
@@ -154,6 +172,8 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
 
 
 @media only screen and (min-width: 960px) {
+    h1 {font-size: 48px;}
+
     #cs-grid {
         width: 100%;
         margin: 0 0 140px 0;
@@ -181,6 +201,10 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
 
     .text-content {
         width: 60%;
+    }
+
+    #cs-intro {
+        margin-top: 60px;
     }
 
     .cs-sub-intro {
@@ -369,12 +393,6 @@ p.metadata {
 p.intro {
     font-size: 22px;
     line-height: 1.7em;
-}
-
-#cs-intro {
-    margin-top: 60px;
-    padding-bottom: 140px;
-    border-bottom: 1px var(--light-grey) solid; 
 }
 
 #cs-intro-details {
