@@ -26,6 +26,83 @@ h2 {font-size: 34px; margin-bottom: 38px;}
 h3 {font-size: 22px; font-weight: 400;}
 h4 {font-size: 17px; font-weight: 400; margin: 0;}
 
+@media only screen and (min-width: 320px) {
+    #cs-grid .row {
+        display: block;
+    }
+
+    #cs-grid .row .col-3 {
+        margin-bottom: 60px;
+        width: 100%;
+    }
+
+    .wrapper {
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+    .row .col-3 {
+        width: 100%;
+    }
+
+    #hi h1 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    #nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+        padding: 12px 0;
+    }
+}
+
+@media only screen and (min-width: 580px) {
+    #hi h1 {
+        font-size: 38px;
+        font-weight: 300;
+    }
+
+    #nav {
+        margin-top: 30px;
+    }
+
+    .wrapper {
+        padding: 0 40px;
+    }
+} 
+
+
+@media only screen and (min-width: 960px) {
+    #cs-grid {
+        width: 100%;
+        margin: 0 0 140px 0;
+        animation: dFadeInUp 1.6s;
+    }
+
+    #hi h1 {
+        font-size: 44px;
+        line-height: 1.7em;
+    }
+
+    #cs-grid .row { 
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #cs-grid .row .col-3 {
+        width: 30%;
+        background-color: none;
+    }
+
+    .wrapper {
+        max-width: 1200px;
+        padding: 0 60px;
+    }
+} 
+
 p.subtext {
     font-size: 16px;
     color: var(--grey-text);
@@ -44,17 +121,6 @@ p.subtext {
 #bottom {
     margin-bottom: 0;
 }
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 60px;
-}
-
-.nav-wrapper { /* use regular wrapper if you want old design */
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 100px;
-}
 
 #fixed-nav {
     position: fixed;
@@ -69,15 +135,6 @@ p.subtext {
     background-color: rgba(255, 255, 255, 0.60);
     z-index: 1;
     width: 100%;
-}
-
-#nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 30px;
-    /* border-bottom: 1px var(--light-grey) solid; */
-    padding: 12px 0;
 }
 
 #nav a {
@@ -116,62 +173,6 @@ p.subtext {
 .case-study {
     animation: fadeInUp 1s;
 }
-
-@media only screen and (min-width: 320px) {
-    #cs-grid .row {
-        display: block;
-    }
-
-    #cs-grid .row .col-3 {
-        margin-bottom: 60px;
-        width: 100%;
-    }
-
-    .wrapper {
-        padding: 0 20px;
-    }
-
-    .row .col-3 {
-        width: 100%;
-    }
-
-    #hi h1 {
-        font-size: 24px;
-        font-weight: 400;
-    }
-}
-
-@media only screen and (min-width: 580px) {
-    #hi h1 {
-        font-size: 38px;
-        font-weight: 300;
-    }
-} 
-
-
-@media only screen and (min-width: 960px) {
-    #cs-grid {
-        width: 100%;
-        margin: 0 0 140px 0;
-        animation: dFadeInUp 1.6s;
-    }
-
-    #hi h1 {
-        font-size: 44px;
-        line-height: 1.7em;
-    }
-
-    #cs-grid .row { 
-        display: flex;
-        justify-content: space-between;
-    }
-
-    #cs-grid .row .col-3 {
-        width: 30%;
-        background-color: none;
-    }
-} 
-
 
 .cs-link {
     width: 48%;
