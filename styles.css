@@ -21,7 +21,7 @@ p, h1, h2 {
     margin: 0;
 }
 
-h1 {font-size: 48px; line-height: 1.7em;}
+h1 {font-size: 48px; line-height: 1.4em; margin-bottom: 8px;}
 h2 {font-size: 34px; margin-bottom: 38px;}
 h3 {font-size: 22px; font-weight: 400;}
 h4 {font-size: 17px; font-weight: 400; margin: 0;}
@@ -107,10 +107,6 @@ p.subtext {
     animation: fadeInUp 1.4s;
 }
 
-#hi h1 {
-    font-size: 44px;
-}
-
 
 #hi a {
     color: var(--black-text);
@@ -121,29 +117,22 @@ p.subtext {
     animation: fadeInUp 1s;
 }
 
-#cs-grid {
-    width: 100%;
-    margin: 0 0 140px 0;
-    animation: dFadeInUp 1.6s;
-}
-@media only screen and (max-width: 960px) {
+@media only screen and (min-width: 320px) {
     #cs-grid .row {
         display: block;
     }
 
     #cs-grid .row .col-3 {
-        width: 100%;
         margin-bottom: 60px;
+        width: 100%;
     }
 
-    #hi h1 {
-        font-size: 38px;
-    }
-} 
-
-@media only screen and (max-width: 580px) {
     .wrapper {
         padding: 0 20px;
+    }
+
+    .row .col-3 {
+        width: 100%;
     }
 
     #hi h1 {
@@ -152,11 +141,37 @@ p.subtext {
     }
 }
 
-.row { 
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 60px;
-}
+@media only screen and (min-width: 580px) {
+    #hi h1 {
+        font-size: 38px;
+        font-weight: 300;
+    }
+} 
+
+
+@media only screen and (min-width: 960px) {
+    #cs-grid {
+        width: 100%;
+        margin: 0 0 140px 0;
+        animation: dFadeInUp 1.6s;
+    }
+
+    #hi h1 {
+        font-size: 44px;
+        line-height: 1.7em;
+    }
+
+    #cs-grid .row { 
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #cs-grid .row .col-3 {
+        width: 30%;
+        background-color: none;
+    }
+} 
+
 
 .cs-link {
     width: 48%;
@@ -274,11 +289,6 @@ p.intro {
     border-bottom: 1px var(--light-grey) solid; 
 }
 
-#cs-intro-details h1 {
-    line-height: 1em;
-    margin-bottom: 18px;
-}
-
 #cs-intro p.metadata, #cs-intro-details p.metadata {
     margin: 2px 0 24px 0;
 }
@@ -350,11 +360,6 @@ p.intro {
 .row {
     display: flex;
     justify-content: space-between;
-}
-
-.row .col-3 {
-    width: 30%;
-    background-color: none;
 }
 
 .row img {
