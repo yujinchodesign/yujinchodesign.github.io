@@ -25,11 +25,12 @@ h3 {font-size: 22px; font-weight: 400;}
 h4 {font-size: 17px; font-weight: 400; margin: 0;}
 
 @media only screen and (min-width: 320px) {
-    h1 {font-size: 36px; line-height: 1.4em; margin-bottom: 8px;}
-    h2 {font-size: 30px; margin-bottom: 34px; line-height: 1.4em;}
+    h1 {font-size: 32px; line-height: 1.4em; margin-bottom: 8px;}
+    h2 {font-size: 26px; margin-bottom: 34px; line-height: 1.4em;}
 
     h1, h2 {
         font-weight: 400;
+        margin-top: 0;
     }
     
     #cs-grid {
@@ -84,6 +85,14 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
         height: auto;
     }
 
+    #cs-intro-details {
+        margin-top: 40px;
+        padding-bottom: 140px;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom: 1px var(--light-grey) solid; 
+    }
+
     .img img {
         width: 100%;
         margin: 0 auto;
@@ -91,16 +100,16 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
 
     .img .page {
         background-color: var(--grey-back);
-        padding: 80px 60px;
+        padding: 60px 40px;
     }
 
     .img .page-tin-final {
         background-image: linear-gradient(to top right, #1D2255 0%, #2A4173 100%);
-        padding: 80px 60px;
+        padding: 60px 40px;
     }
 
     .page-tin-final img {
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 
     .row {
@@ -168,6 +177,18 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
         width: 30.5%;
         margin-bottom: 0px;
     }
+
+    .img .page {
+        padding: 80px 60px;
+    }
+
+    .img .page-tin-final {
+        padding: 80px 60px;
+    }
+
+    .page-tin-final img {
+        margin-bottom: 60px;
+    }
 } 
 
 
@@ -204,13 +225,18 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
     }
 
     #cs-intro {
-        margin-top: 60px;
+        margin-top: 80px;
     }
 
     .cs-sub-intro {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+    }
+
+    #cs-intro-details {
+        margin-top: 80px;
+        display: flex;
     }
 
     .cs-sub-details {
@@ -393,15 +419,6 @@ p.metadata {
 p.intro {
     font-size: 22px;
     line-height: 1.7em;
-}
-
-#cs-intro-details {
-    margin-top: 80px;
-    display: flex;
-    padding-bottom: 140px;
-    justify-content: space-between;
-    align-items: flex-start;
-    border-bottom: 1px var(--light-grey) solid; 
 }
 
 #cs-intro p.metadata, #cs-intro-details p.metadata {
