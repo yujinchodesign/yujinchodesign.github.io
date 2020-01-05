@@ -244,6 +244,11 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
         padding: 0 40px;
     }
 
+    p.intro {
+        font-size: 22px;
+        line-height: 1.7em;
+    }
+
     .row {
         display: flex;
         justify-content: space-between;
@@ -509,11 +514,6 @@ p.metadata {
     color: var(--grey-text);
     font-size: 16px;
     font-weight: 400;
-}
-
-p.intro {
-    font-size: 22px;
-    line-height: 1.7em;
 }
 
 #cs-intro p.metadata, #cs-intro-details p.metadata {
