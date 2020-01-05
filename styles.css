@@ -156,6 +156,15 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
         border-bottom: 1px var(--light-grey) solid; 
     }
 
+    .fw {
+        padding: 40px 0 48px 0;
+        width: 100%;
+    }
+
+    .fw-floating {
+        padding: 40px 0 0 0;
+    }
+
     .img img {
         width: 100%;
         margin: 0 auto;
@@ -338,6 +347,14 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
 
     .cs-sub-details {
         margin-top: 0;
+    }
+
+    .fw {
+        padding: 60px 0 72px 0;
+    }
+
+    .fw-floating {
+        padding: 60px 0 0 0;
     }
 
     .img .page {
@@ -572,17 +589,8 @@ p.intro {
     padding: 54px 12px 0 0;
 }
 
-.fw-floating {
-    padding: 60px 0 0 0;
-}
-
 .in-text-img {
     padding: 60px 0;
-}
-
-.fw {
-    padding: 60px 0 72px 0;
-    width: 100%;
 }
 
 .centered-m {
