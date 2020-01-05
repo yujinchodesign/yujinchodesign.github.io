@@ -22,7 +22,7 @@ p {
 }
 
 h3 {font-size: 22px; font-weight: 400;}
-h4 {font-size: 17px; font-weight: 400; margin: 0;}
+h4 {font-size: 17px; font-weight: 400; margin-bottom: 8px;}
 
 #nav a {
     color: var(--black-text);
@@ -33,7 +33,7 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
     h1 {font-size: 32px; line-height: 1.4em; margin-bottom: 8px;}
     h2 {font-size: 26px; margin-bottom: 34px; line-height: 1.4em;}
 
-    h1, h2 {
+    h1, h2, h4 {
         font-weight: 400;
         margin-top: 0;
     }
@@ -167,12 +167,12 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
     }
 
     .fw {
-        padding: 40px 0 48px 0;
+        padding: 36px 0 44px 0;
         width: 100%;
     }
 
     .fw-floating {
-        padding: 40px 0 0 0;
+        padding: 36px 0 0 0;
     }
 
     .img img {
