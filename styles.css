@@ -121,9 +121,9 @@ h4 {font-size: 17px; font-weight: 400; margin-bottom: 8px;}
 
     #nav .hamburger-line {
         width: 28px;
-        height: 1px;
+        height: 2px;
         background-color: var(--black-text);
-        margin: 4px 0 8px 0;
+        margin: 5px 0 7px 0;
     }
 
     #mobileMenu {
