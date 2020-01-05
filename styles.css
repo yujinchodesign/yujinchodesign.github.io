@@ -29,6 +29,16 @@ h4 {font-size: 17px; font-weight: 400; margin-bottom: 8px;}
     text-decoration: none;
 }
 
+.cs-text h2 {
+    float:left;
+   clear:left;
+    border-bottom: 1px rgba(255, 255, 255, 0) solid;
+}
+#site-links a:hover, .cs-link:hover h2, #next-project a:hover {
+    border-bottom: 1px var(--black-text) solid;
+}
+
+
 @media only screen and (min-width: 320px) {
     h1 {font-size: 32px; line-height: 1.4em; margin-bottom: 8px;}
     h2 {font-size: 26px; margin-bottom: 34px; line-height: 1.4em;}
@@ -98,7 +108,7 @@ h4 {font-size: 17px; font-weight: 400; margin-bottom: 8px;}
         font-weight: 400;
     }
     #nav #site-links a {
-        padding-left: 40px;
+        margin-left: 40px;
     }
 
     #nav .hamburger-line {
@@ -519,12 +529,12 @@ p.subtext {
 }
 
 .cs-link:hover .plastiq {
-    opacity: 0.95;
+    /* opacity: 0.95; */
     transition: .15s ease;
 }
 
 .cs-link:hover .capstone, .cs-link:hover .college, .cs-link:hover .d4sd {
-    opacity: 0.85;
+    /* opacity: 0.85; */
     transition: .15s ease;
 }
 
