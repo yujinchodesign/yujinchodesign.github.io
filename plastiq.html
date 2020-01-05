@@ -13,7 +13,19 @@
                     x.style.display = 'none';
                 }
             }
+
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("fixed-nav").style.top = "0";
+            } else {
+                document.getElementById("fixed-nav").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+            }
         </script>
+        
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,500,500i&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -22,7 +34,6 @@
                 <div id='closeMenu' onclick="showHideMenu()">×</div>
                 <div id='mobile-site-links'>
                     <a href='index.html'>Projects</a><br>
-                    <a>Resume</a><br>
                     <a href='about.html'>About</a>
                 </div>
             </div>
@@ -35,7 +46,6 @@
                     </div>
                     <div id='site-links'>
                         <a href='index.html'>Projects</a>
-                        <a>Resume</a>
                         <a href='about.html'>About</a>
                     </div>
                     <div id='hamburger' onclick="showHideMenu()">
