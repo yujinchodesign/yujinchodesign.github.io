@@ -136,6 +136,11 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
         padding-top: 100px;
     }
 
+    #cs-hero-img {
+        width: 100%;
+        margin: 100px 0 0 0;
+    }
+
     #cs-intro {
         margin-top: 40px;
         padding-bottom: 100px;
@@ -181,12 +186,12 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
 
     .img .page {
         background-color: var(--grey-back);
-        padding: 60px 40px;
+        padding: 36px 28px;
     }
 
     .img .page-tin-final {
         background-image: linear-gradient(to top right, #1D2255 0%, #2A4173 100%);
-        padding: 60px 40px;
+        padding: 36px 28px;
     }
 
     .page-tin-final img {
@@ -200,6 +205,10 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
     .row .col-2 {
         width: 100%;
         margin-bottom: 40px;
+    }
+
+    .col-2-m {
+        margin-bottom: 0;
     }
     
     .row .col-2-w {
@@ -266,6 +275,11 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
     }
 
     .row .col-2 {
+        width: 45%;
+        margin-bottom: 0;
+    }
+
+    .col-2-m {
         width: 45%;
         margin-bottom: 0;
     }
@@ -345,6 +359,10 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
 
     .grey-top-border {
         padding-top: 140px;
+    }
+
+    #cs-hero-img {
+        margin: 118px 0 0 0;
     }
 
     .cs-sub-intro {
@@ -503,11 +521,6 @@ p.subtext {
 .text-content a, .text a {
     text-decoration: underline;
     color: var(--black-text);
-}
-
-#cs-hero-img {
-    width: 100%;
-    margin: 118px 0 0 0;
 }
 
 #cs-hero-img img {
