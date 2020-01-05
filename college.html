@@ -15,11 +15,12 @@
                 }
             }
             var prevScrollpos = window.pageYOffset;
+            var browserWidth = window.innerWidth;
             window.onscroll = function() {
             var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
+            if (browserWidth >= 580 && prevScrollpos > currentScrollPos) {
                 document.getElementById("fixed-nav").style.top = "0";
-            } else {
+            } else if (browserWidth >= 580) {
                 document.getElementById("fixed-nav").style.top = "-100px";
             }
             prevScrollpos = currentScrollPos;
