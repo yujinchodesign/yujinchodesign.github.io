@@ -67,6 +67,23 @@ h4 {font-size: 17px; font-weight: 400; margin-bottom: 8px;}
         animation: fadeInUp 1.4s;
     }
 
+    .about {
+        display: table;
+        margin-top: 100px;
+    }
+
+    .about .text {
+        display: table-footer-group; 
+    }
+
+    .about #me {
+        display: table-header-group; 
+    }
+
+    .about #me img {
+        margin-bottom: 40px;
+    }
+
 
     #nav {
         display: flex;
@@ -328,6 +345,10 @@ h4 {font-size: 17px; font-weight: 400; margin-bottom: 8px;}
         width: 40%;
         float: left;
     }
+
+    .about h1 {
+        margin-bottom: 20px;
+    }
 } 
 
 
@@ -369,6 +390,10 @@ h4 {font-size: 17px; font-weight: 400; margin-bottom: 8px;}
 
     .grey-top-border {
         padding-top: 140px;
+    }
+
+    .about {
+        margin-top: 118px;
     }
 
     #cs-hero-img {
@@ -585,10 +610,6 @@ p.metadata {
 .detail .label {
     color: var(--grey-text);
     font-weight: 400;
-}
-
-.about {
-    margin-top: 124px;
 }
 
 .about .text {
