@@ -83,7 +83,7 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
         width: 28px;
         height: 1px;
         background-color: var(--black-text);
-        margin: 7px 0;
+        margin: 4px 0 8px 0;
     }
 
     #mobileMenu {
@@ -159,6 +159,10 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
     .img img {
         width: 100%;
         margin: 0 auto;
+    }
+
+    .img #me {
+        width: 100%;
     }
 
     .img .page {
@@ -271,6 +275,11 @@ h4 {font-size: 17px; font-weight: 400; margin: 0;}
 
     .content-block {
         margin-bottom: 140px;
+    }
+
+    .img #me {
+        width: 40%;
+        float: left;
     }
 } 
 
@@ -449,11 +458,6 @@ p.subtext {
 .cs-img img {
     width: 100%;
     display: block;
-}
-
-.img #me {
-    width: 40%;
-    float: left;
 }
 
 .plastiq {
