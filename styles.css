@@ -98,6 +98,44 @@ h4 {font-size: 17px; font-weight: 400; margin-bottom: 8px;}
         margin-bottom: 16px;
     }
 
+    /* #experience {
+        border-top: 1px solid  var(--light-grey);
+        margin-top: 0px;
+        padding-top: 80px;
+    } */
+
+    #social-links {
+        margin-top: 64px;
+        display: flex;
+    }
+
+    #social-links img {
+        height: 22px;
+        width: 22px;
+        margin-right: 20px;
+    }
+
+    #linkedin img {
+        filter: grayscale(100%) opacity(50%);
+    }
+
+    #spotify img {
+        filter: grayscale(100%) opacity(27%);
+    }
+
+    #social-links h4 {
+        margin: 4px 0 0 0;
+        line-height: 1em;
+    }
+
+    #social-links a {
+        text-decoration: none;
+        border-bottom: none;
+    }
+
+    #social-links h4 a:hover {
+        border-bottom: 1px solid var(--black-text);
+    }
 
     #nav {
         display: flex;
@@ -222,6 +260,10 @@ h4 {font-size: 17px; font-weight: 400; margin-bottom: 8px;}
         width: 100%;
     }
 
+    .about #me img {
+        border-bottom: 0;
+    }
+
     .img .page {
         background-color: var(--grey-back);
         padding: 36px 28px;
@@ -292,7 +334,7 @@ h4 {font-size: 17px; font-weight: 400; margin-bottom: 8px;}
     }
 
     #hi {
-        margin: 142px 0 140px 0;
+        margin: 16vh 0 14.5vh 0;
     }
 
     #nav {
@@ -366,6 +408,10 @@ h4 {font-size: 17px; font-weight: 400; margin-bottom: 8px;}
         margin-bottom: 80px;
     }
 
+    .about #me img {
+        margin-bottom: 0;
+    }
+
     .img #me {
         width: 40%;
         float: left;
@@ -382,7 +428,7 @@ h4 {font-size: 17px; font-weight: 400; margin-bottom: 8px;}
 
     #cs-grid {
         width: 100%;
-        margin: 0 0 80px 0;
+        margin: 0 0 60px 0;
     }
 
     #hi h1 {
@@ -459,6 +505,10 @@ h4 {font-size: 17px; font-weight: 400; margin-bottom: 8px;}
 
     .page-tin-final img {
         margin-bottom: 100px;
+    }
+
+    .about .text {
+        margin-top: 5em;
     }
 } 
 
@@ -581,7 +631,8 @@ p.subtext {
 }
 
 .text-content a, .text a {
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: solid 1px var(--black-text);
     color: var(--black-text);
 }
 
@@ -637,10 +688,6 @@ p.metadata {
 .detail .label {
     color: var(--grey-text);
     font-weight: 400;
-}
-
-.about .text {
-    margin-top: 6em;
 }
 
 .row img {
